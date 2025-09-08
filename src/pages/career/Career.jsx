@@ -5,7 +5,7 @@ const Career = () => {
         <div className='relative z-10'>
             <section className="h-[90vh] flex justify-between items-center  text-white">
                 <div className="w-[85%] mx-auto">
-                    <h1 className="text-[clamp(3rem,5vw,50rem)] font-bold text-[#A259FF] mb-6 exo max-md:text-center"
+                    <h1 className="text-[clamp(3rem,5vw,50rem)] font-bold text-[#B555D3] mb-6 exo max-md:text-center"
                     // style={{ fontFamily: "Ethnocentric" }}
                     >CAREERS</h1>
                     <div className="flex justify-between h-[30dvh] max-md:flex-col">

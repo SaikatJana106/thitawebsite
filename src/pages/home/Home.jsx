@@ -252,11 +252,11 @@ const Home = () => {
             {/* home end */}
 
             {/* about start */}
-            <section className='max-w-[90%] md:max-w-[80%] mx-auto h-[70dvh] mt-[10%]  relative z-10'>
-                <h2 className="text-[clamp(3rem,5vw,50rem)]  text-[#6927DA] exo"
+            <section className='max-w-[90%] md:max-w-[80%] mx-auto h-[70dvh] mt-[30px]  relative z-10'>
+                <h2 className="text-[clamp(3rem,5vw,50rem)]  text-[#B555D3] exo"
                 // style={{ fontFamily: "Ethnocentric" }}
                 >
-                    About <span className="font-bold">Us</span> 
+                    About <span className="font-bold">Us</span>
                     {/* <span className="inline-block rounded-full w-4 h-4 bg-[#7D86D7]"></span> */}
                 </h2>
                 <div className='flex flex-col md:flex-row justify-around flex-wrap gap-10 md:gap-0'>
@@ -321,6 +321,86 @@ const Home = () => {
             {/* about end  */}
 
             {/* service */}
+            {/* <section
+                id="service-scroll-section"
+                className="h-[300vh] md:h-[400vh] relative text-white z-10 w-full mx-auto"
+            >
+                <div className="sticky top-0 h-screen overflow-hidden flex justify-center items-center">
+                    <h1 className="text-[clamp(3rem,18vw,50rem)] font-black z-0 pointer-events-none select-none flex gap-1 md:gap-2">
+                        {"SERVICES".split("").map((char, index) => {
+                            const delay = index * 0.05;
+                            let introTransform = "translateY(100vh)";
+                            let introOpacity = "0";
+
+                            if (letterAnimationProgress > delay) {
+                                const letterProgress = (letterAnimationProgress - delay) / 0.3;
+                                introTransform = `translateY(${(1 - Math.min(letterProgress, 1)) * 100}vh)`;
+                                introOpacity = `${Math.min(letterProgress, 1)}`;
+                            }
+
+                            let outroTransform = "translateY(0)";
+                            let outroOpacity = "1";
+
+                            if (serviceScrollProgress > 0.8) {
+                                const outroDelay = (7 - index) * 0.05;
+                                const outroProgress = Math.min((serviceScrollProgress - 0.8) / 0.2, 1);
+                                if (outroProgress > outroDelay) {
+                                    const letterOutroProgress = (outroProgress - outroDelay) / 0.3;
+                                    outroTransform = `translateY(${-Math.min(letterOutroProgress, 1) * 100}vh)`;
+                                    outroOpacity = `${1 - Math.min(letterOutroProgress, 1)}`;
+                                }
+                            }
+
+                            const combinedTransform = serviceScrollProgress > 0.8 ?
+                                `${outroTransform}` :
+                                `${introTransform} ${outroTransform}`;
+
+                            const combinedOpacity = serviceScrollProgress > 0.8 ?
+                                outroOpacity :
+                                (serviceScrollProgress > 0.2 ? introOpacity : introOpacity);
+
+                            return (
+                                <span
+                                    key={index}
+                                    ref={(el) => (letterRefs.current[index] = el)}
+                                    className="transition-all duration-300 ease-out"
+                                    style={{
+                                        transform: combinedTransform,
+                                        opacity: combinedOpacity,
+                                        color: activeLetters[index] ? "#6927DA" : "white",
+                                    }}
+                                >
+                                    {char}
+                                </span>
+                            );
+                        })}
+                    </h1>
+
+                    <div
+                        ref={cardContainerRef}
+                        className="absolute top-1/2 left-0 -translate-y-1/2 flex gap-5 px-4 md:px-10 z-10 transition-transform duration-100"
+                        style={{ transform: `translateX(${translateX}px)` }}
+                    >
+                        {servicedata.map((item, i) => (
+                            <div
+                                key={i}
+                                className={`w-[clamp(12rem,25vw,20rem)] h-[clamp(8rem,18vw,15rem)] min-h-fit relative p-6 bg-[#09093C] flex justify-center items-start flex-col rounded-xl transition-all duration-100 ease-in-out
+                                ${i % 2 === 0 ? 'mb-10' : 'mt-10'}
+                                ${isScrolling ? 'scale-[0.97] shadow-md shadow-transparent' : 'scale-100 shadow-xl shadow-black/60'}`}
+                            >
+                                <div className='flex gap-1 self-end absolute top-[10%]'>
+                                    <div className='border border-[#B555D3] rounded-full p-2'>
+                                        <div className='bg-[#B555D3] h-1 w-1 rounded-full'></div>
+                                    </div>
+                                    <small>#{i + 1}</small>
+                                </div>
+                                <h3 className="text-[clamp(1rem,1.5vw,50rem)] font-bold">{item.title}</h3>
+                                <p className="text-[clamp(0.70rem,0.90vw,50rem)] text-gray-300 mt-2">{item.des}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section> */}
             <section
                 id="service-scroll-section"
                 className="h-[300vh] md:h-[400vh] relative text-white z-10 w-full mx-auto"
@@ -389,8 +469,8 @@ const Home = () => {
                                 ${isScrolling ? 'scale-[0.97] shadow-md shadow-transparent' : 'scale-100 shadow-xl shadow-black/60'}`}
                             >
                                 <div className='flex gap-1 self-end absolute top-[10%]'>
-                                    <div className='border border-[#6927DA] rounded-full p-2'>
-                                        <div className='bg-[#6927DA] h-1 w-1 rounded-full'></div>
+                                    <div className='border border-[#B555D3] rounded-full p-2'>
+                                        <div className='bg-[#B555D3] h-1 w-1 rounded-full'></div>
                                     </div>
                                     <small>#{i + 1}</small>
                                 </div>
@@ -404,54 +484,56 @@ const Home = () => {
             {/* service */}
             {/* service */}
 
-            {/* why Theta start */}
+            {/* why Theta start #6927DA*/}
             <section className='relative z-10 text-white px-4 md:px-10 py-20'>
                 <div className='max-w-[90%] md:max-w-[85%] mx-auto'>
-                    <h1 className="text-[clamp(3rem,5vw,4rem)] font-light text-[#6927DA]" data-aos="zoom-out">
+                    <h1 className="text-[clamp(3rem,5vw,4rem)] font-light text-[#B555D3]" data-aos="zoom-out">
                         Why Choose <br />
                         <span className="font-bold">Theta</span>
-                        <span className='text-[#6927DA]' style={{ fontFamily: "Ethnocentric" }}> ?</span>
+                        <span className='text-[#B555D3]' style={{ fontFamily: "Ethnocentric" }}> ?</span>
                     </h1>
-
-                    <div className='flex flex-col md:flex-row flex-wrap gap-8 md:gap-24 self-end mt-10'>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-8 mt-10 w-fit">
                         <div className="text-sm md:text-base leading-relaxed">
-                            EXPERT<br />
+                            EXPERT
                             PROFESSIONALS WITH<br />
-                            DEEP INDUSTRY<br />
+                            DEEP INDUSTRY
                             EXPERIENCE.
                         </div>
-                        <div className='flex flex-col gap-8 '>
-                            <div className="text-sm md:text-base leading-relaxed">
-                                DELIVERING TAILORED<br />
-                                IT SOLUTIONS TO<br />
-                                MEET CLIENT'S NEEDS.
-                            </div>
-                            <div className="text-sm md:text-base leading-relaxed">
-                                LEVERAGING<br />
-                                ADVANCED<br />
-                                TECHNOLOGIES FOR<br />
-                                OPTIMAL RESULTS.
-                            </div>
+                        <div className="text-sm md:text-base leading-relaxed">
+                            BUILDING LONG TERM,<br />
+                            TRANSPARENT
+                            PARTNERSHIPS.
                         </div>
-                        <div className='flex flex-col gap-8 '>
-                            <div className="text-sm md:text-base leading-relaxed">
-                                BUILDING LONG TERM,<br />
-                                TRANSPARENT<br />
-                                PARTNERSHIPS.
-                            </div>
-                            <div className="text-sm md:text-base leading-relaxed">
-                                COMMITTED TO<br />
-                                EXCEEDING CLIENT'S<br />
-                                EXPECTATIONS.
-                            </div>
+
+                        <div className="text-sm md:text-base leading-relaxed">
+                            COMMITTED TO
+                            EXCEEDING <br /> CLIENT'S
+                            EXPECTATIONS.
+                        </div>
+
+                        <div className="text-sm md:text-base leading-relaxed">
+                            LEVERAGING
+                            ADVANCED <br />
+                            TECHNOLOGIES  FOR
+                            OPTIMAL RESULTS.
                         </div>
                         <div className="text-sm md:text-base leading-relaxed">
-                            DEDICATED TO<br />
+                            DELIVERING TAILORED
+                            IT <br />
+                            SOLUTIONS  TO
+                            MEET CLIENT'S NEEDS.
+                        </div>
+
+
+
+                        <div className="text-sm md:text-base leading-relaxed">
+                            DEDICATED TO
                             UNDERSTANDING<br />
-                            EACH CLIENT'S<br />
+                            EACH CLIENT'S
                             UNIQUE CHALLENGES.
                         </div>
                     </div>
+
 
                     <div className="w-full md:w-[40%] h-px bg-gray-500 mb-3 relative mt-10" data-aos="fade-right">
                         <div className="w-1 h-1 bg-white rounded-full absolute right-0 top-1/2 transform -translate-y-1/2"></div>
@@ -467,12 +549,12 @@ const Home = () => {
             >
                 <div className="sticky top-[5%] h-screen flex flex-col justify-end overflow-hidden">
                     <div className="relative h-[629px]">
-                        <h1 className="text-[clamp(3rem,5vw,50rem)] text-[#6927DA] text-left max-w-[85%] mx-auto exo"
+                        <h1 className="text-[clamp(3rem,5vw,50rem)] text-[#B555D3] text-left max-w-[85%] mx-auto exo"
                         // style={{ fontFamily: "Ethnocentric" }}
                         >
                             Our <span className="font-bold exo"
                             // style={{ fontFamily: "Ethnocentric" }}
-                            >Partners</span> 
+                            >Partners</span>
                             {/* <span className="inline-block w-2 h-2 rounded-full bg-[#7D86D7]"></span> */}
                         </h1>
                         <div className=" inset-0">
@@ -534,19 +616,19 @@ const Home = () => {
 
             {/* client review */}
             {/* remove this div it is hidding this section review testimonial  */}
-            <div className='hidden'>  
+            <div className='hidden'>
                 <section className="min-h-screen flex   items-center  text-white ">
                     <div className="flex flex-col justify-around h-[60dvh] max-w-full mx-auto relative">
 
                         {/* Title at top-left */}
-                        <div className="text-[clamp(2.5rem,4vw,50rem)] text-[#6927DA] ml-[5%] exo"
+                        <div className="text-[clamp(2.5rem,4vw,50rem)] text-[#B555D3] ml-[5%] exo"
                         // style={{ fontFamily: "Ethnocentric" }}
                         >
                             <div className=' gap-2'>
                                 <span data-aos="fade-up">What</span> <span data-aos="fade-up">Are</span><span data-aos="fade-up">They</span><br />
                             </div>
                             <div className='flex gap-2 mt-2'>
-                                <h1 className='font-bold text-[#6927DA] text-[clamp(2.5rem,4vw,50rem)] exo' data-aos="fade-up"
+                                <h1 className='font-bold text-[#B555D3] text-[clamp(2.5rem,4vw,50rem)] exo' data-aos="fade-up"
                                 // style={{ fontFamily: "Ethnocentric" }}
                                 >Saying</h1> <span className="inline-block w-2 h-2 rounded-full bg-[#7D86D7] self-end mb-[1%]"></span>
 

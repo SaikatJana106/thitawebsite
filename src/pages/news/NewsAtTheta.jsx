@@ -29,7 +29,7 @@ const NewsAtTheta = () => {
             <section className=" text-white flex justify-between items-center min-h-screen px-8 py-12 font-sans">
                 <div className='w-[85%] mx-auto h-fit'>
                     {/* Header */}
-                    <h1 className="text-5xl md:text-6xl font-bold text-[#6927DA] mb-10 tracking-wide text-center exo"
+                    <h1 className="text-5xl md:text-6xl font-bold text-[#B555D3] mb-10 tracking-wide text-center exo"
                     // style={{ fontFamily: "Ethnocentric" }}
                     >
 
@@ -62,7 +62,7 @@ const NewsAtTheta = () => {
             <section className=" text-white px-6 md:px-16 py-16 font-sans relative overflow-hidden">
                 <div className="w-[85%] mx-auto h-fit">
                     {/* Header */}
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#6927DA] mb-4 exo"
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#B555D3] mb-4 exo"
                     // style={{ fontFamily: "Ethnocentric" }}
                     >
                         Popular Now
@@ -119,7 +119,7 @@ const NewsAtTheta = () => {
             <section className=" text-white px-6 md:px-16 py-16 font-sans relative overflow-hidden">
                 <div className="w-[85%] mx-auto h-fit">
                     {/* Header */}
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#6927DA] mb-4 exo"
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#B555D3] mb-4 exo"
                     // style={{ fontFamily: "Ethnocentric" }}
                     >
                         Resent Articles
@@ -176,7 +176,7 @@ const NewsAtTheta = () => {
             <section className=" text-white px-6 md:px-16 py-16 font-sans relative overflow-hidden">
                 <div className="w-[85%] mx-auto h-fit">
                     {/* Header */}
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#6927DA] mb-4 exo"
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#B555D3] mb-4 exo"
                     // style={{ fontFamily: "Ethnocentric" }}
                     >
                         Case Studies
@@ -216,7 +216,7 @@ const NewsAtTheta = () => {
                 </div>
             </section>
             <section className='min-h-screen w-[85%] mx-auto'>
-                <h1 className='text-[#6927DA] text-6xl exo'
+                <h1 className='text-[#B555D3] text-6xl exo'
                 // style={{ fontFamily: "Ethnocentric" }}
                 >All Articals</h1>
                 <p className='text-white roboto-semi'>We share common trands, opinions, short and long story from the team behimd company</p>

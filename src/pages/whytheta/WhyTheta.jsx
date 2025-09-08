@@ -68,7 +68,7 @@ const WhyTheta = () => {
             <section className="bg-[#0c041c]  min-h-screen">
                 <div className='w-[85%] mx-auto text-white py-20 px-6 xl:px-24 flex flex-col xl:flex-row items-center justify-between'>
                     {/* Left Section */}
-                    <div className="text-[#a050ff]  font-bold font-orbitron uppercase leading-tight text-center md:text-left xl:w-1/2"
+                    <div className="text-[#B555D3]  font-bold font-orbitron uppercase leading-tight text-center md:text-left xl:w-1/2"
                     // style={{ fontFamily: "Ethnocentric" }}
                     >
                         <p className='roboto-semi text-[clamp(3rem,4vw,50rem)]'>What Sets</p>

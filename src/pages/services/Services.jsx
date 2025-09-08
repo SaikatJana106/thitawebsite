@@ -61,7 +61,7 @@ const Services = () => {
                 <div className='w-[85%]'>
                     <div className='flex justify-start flex-col items-start'>
                         <h1
-                            className={`exo text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-widest text-purple-500  transition-all duration-500 ease-in-out
+                            className={`exo text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-widest text-[#B555D3]  transition-all duration-500 ease-in-out
           ${isAnimatingOut ? "-translate-y-5 opacity-0" : ""}
           ${isAnimatingIn ? "translate-y-5 opacity-0" : ""}
           ${!isAnimatingOut && !isAnimatingIn ? "translate-y-0 opacity-100" : ""}
@@ -102,7 +102,7 @@ const Services = () => {
                         >
                              Results-Driven for 
                         </h3>
-                        <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-widest text-purple-500 mt-[2%] exo"
+                        <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-widest text-[#B555D3] mt-[2%] exo"
                         style={{ fontFamily: "Ethnocentric" }}
                         >
                           a Connected Future.
@@ -119,7 +119,7 @@ const Services = () => {
                 <div className='w-[85%]'>
                     <div className='flex justify-start flex-col items-start'>
                         <h1
-                            className={`exo text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-widest text-purple-500  transition-all duration-500 ease-in-out
+                            className={`exo text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-widest text-[#B555D3]  transition-all duration-500 ease-in-out
           ${isAnimatingOut ? "-translate-y-5 opacity-0" : ""}
           ${isAnimatingIn ? "translate-y-5 opacity-0" : ""}
           ${!isAnimatingOut && !isAnimatingIn ? "translate-y-0 opacity-100" : ""}
@@ -159,7 +159,7 @@ const Services = () => {
                         >
                             That Empowers
                         </h3>
-                        <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-widest text-purple-500 mt-[2%] exo"
+                        <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-widest text-[#B555D3] mt-[2%] exo"
                         // style={{ fontFamily: "Ethnocentric" }}
                         >
                             Your Business
@@ -181,7 +181,7 @@ const Services = () => {
                     // style={{ fontFamily: "Ethnocentric" }}
                     >
                         ALL YOUR <br />
-                        <span className="text-[#a24ff1]">TECHNOLOGICAL NEEDS</span> <br />
+                        <span className="text-[#B555D3]">TECHNOLOGICAL NEEDS</span> <br />
                         ARE COVERED RIGHT HERE
                     </h1>
 

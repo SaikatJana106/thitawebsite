@@ -11,6 +11,7 @@ const Footer = () => {
             <footer className=" relative z-10">
                 <div className='max-w-[98%] md:max-w-[85%] text-white px-6 py-16 font-sans mx-auto'>
                     {/* Heading */}
+                    {/* for footer dot go to index.css line 105 */}
                     <div className='w-full md:w-1/2'>
 
                         <Link to="/contact" class="mask-link text-[clamp(2rem,4vw,50rem)]" data-id="Studio" aria-label="Studio" style={{ alignSelf: 'flex-end' }} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>

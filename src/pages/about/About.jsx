@@ -250,7 +250,7 @@ const About = () => {
       >
         <path
           ref={pathRef}
-          stroke="#6927DA"
+          stroke="#B555D3"
           strokeWidth="2"
           fill="none"
           strokeLinecap="round"
@@ -267,7 +267,7 @@ const About = () => {
 
         <path
           ref={missionPathRef}
-          stroke="#6927DA"
+          stroke="#B555D3"
           strokeWidth="2"
           fill="none"
           strokeLinecap="round"
@@ -284,7 +284,7 @@ const About = () => {
 
         <path
           ref={goalsToTeamPathRef}
-          stroke="#6927DA"
+          stroke="#B555D3"
           strokeWidth="2"
           fill="none"
           strokeLinecap="round"
@@ -303,7 +303,7 @@ const About = () => {
       {/* Hero Section */}
       <div className="min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-3xl">
-          <h1 className="text-[clamp(1.5rem,3vw+3px,50rem)] leading-tight font-bold text-[#6927DA] tracking-wide uppercase mb-6 exo"
+          <h1 className="text-[clamp(1.5rem,3vw+3px,50rem)] leading-tight font-bold text-[#B555D3] tracking-wide uppercase mb-6 exo"
           // style={{ fontFamily: "Ethnocentric" }}
           >
             Know More About<br />Our Journey
@@ -336,7 +336,7 @@ const About = () => {
         <section className="py-12 md:py-20 relative z-10">
           <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div>
-              <h1 className="text-[clamp(2rem,3vw+5px,50rem)] font-bold text-[#6927DA] uppercase tracking-wide mb-6 exo max-md:text-center"
+              <h1 className="text-[clamp(2rem,3vw+5px,50rem)] font-bold text-[#B555D3] uppercase tracking-wide mb-6 exo max-md:text-center"
               //  style={{ fontFamily: "Ethnocentric" }}
               >
                 Behind the<br />Success
@@ -398,7 +398,7 @@ const About = () => {
         <div className="max-w-[90%] md:max-w-[80%] mx-auto">
           <h2
             ref={goalsHeadingRef}
-            className="text-[clamp(1.5rem,4vw,50rem)] font-bold text-[#6927DA] uppercase tracking-wide text-left mb-8 md:mb-16 exo"
+            className="text-[clamp(1.5rem,4vw,50rem)] font-bold text-[#B555D3] uppercase tracking-wide text-left mb-8 md:mb-16 exo"
           >
             HOW WE DEFINE OUR <br />GOALS AT THETA
           </h2>
@@ -439,7 +439,7 @@ const About = () => {
 
       {/* Team Section */}
       <div className="py-8 md:py-12 px-4 text-white relative z-10">
-        <h2 className="text-center text-[clamp(1.2rem,2vw,50rem)] font-extrabold text-[#6927DA] tracking-wide mb-6 md:mb-10 uppercase exo">
+        <h2 className="text-center text-[clamp(1.2rem,2vw,50rem)] font-extrabold text-[#B555D3] tracking-wide mb-6 md:mb-10 uppercase exo">
           Our Team, Our Strength
         </h2>
         <div
@@ -467,10 +467,10 @@ const About = () => {
                 <p className="text-xs md:text-sm text-gray-300">{member.role}</p>
               </div>
               <div className="absolute bottom-[-50px] left-0 w-full flex justify-center space-x-4 text-white bg-black/70 text-lg opacity-0 group-hover:bottom-4 group-hover:opacity-100 group-hover:animate-bounce transition-all duration-500 ease-out">
-                <FaFacebookF className="hover:text-[#6927DA] cursor-pointer" />
-                <FaInstagram className="hover:text-[#6927DA] cursor-pointer" />
-                <FaLinkedinIn className="hover:text-[#6927DA] cursor-pointer" />
-                <FaTimes className="hover:text-[#6927DA] cursor-pointer" />
+                <FaFacebookF className="hover:text-[#B555D3] cursor-pointer" />
+                <FaInstagram className="hover:text-[#B555D3] cursor-pointer" />
+                <FaLinkedinIn className="hover:text-[#B555D3] cursor-pointer" />
+                <FaTimes className="hover:text-[#B555D3] cursor-pointer" />
               </div>
             </div>
           ))}
@@ -531,7 +531,7 @@ const About = () => {
       {/* Certifications Section */}
       <section className=" py-12">
         <div className="container mx-auto px-4">
-          <h2 className="font-bold text-purple-800 text-center mb-8 exo text-[clamp(2rem,4vw,50rem)]">Theta Certifications</h2>
+          <h2 className="font-bold text-[#B555D3] text-center mb-8 exo text-[clamp(2rem,4vw,50rem)]">Theta Certifications</h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {certificates.map((cert, index) => (
               <div
@@ -549,7 +549,7 @@ const About = () => {
                   />
                 </div>
                 <div className="p-4 bg-[#262244]">
-                  <h3 className="text-purple-700 font-semibold text-lg mb-2 text-center exo">
+                  <h3 className="text-[#B555D3] font-semibold text-lg mb-2 text-center exo">
                     {cert.title}
                   </h3>
                   <p className="text-gray-100 text-sm text-center roboto-semi">

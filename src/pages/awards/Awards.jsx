@@ -28,7 +28,7 @@ const Awards = () => {
 
                     {/* Right - Text */}
                     <div className="w-full md:w-1/2 text-center md:text-left p-4 space-y-6">
-                        <h1 className="text-5xl font-bold text-purple-500 tracking-wide exo" 
+                        <h1 className="text-5xl font-bold text-[#B555D3] tracking-wide exo" 
                         // style={{ fontFamily: "Ethnocentric" }}
                         >AWARDS</h1>
                         <p className="text-lg tracking-widest roboto-semi">A LEGACY OF DISTINCTION</p>
