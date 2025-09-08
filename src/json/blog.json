@@ -1,0 +1,75 @@
+{
+    "featured": {
+        "title": "Blog Title",
+        "author": "Author",
+        "image": "https://tse2.mm.bing.net/th?id=OIP.zuj7kANit3527OCU_UP2YAHaFm&pid=Api&P=0&h=180"
+    },
+    "popular": [
+        {
+            "title": "Blog Title",
+            "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum.",
+            "image": "/1 (10).jpg",
+            "link": "#",
+            "readMore": false
+        },
+        {
+            "title": "Blog Title",
+            "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum.",
+            "image": "/1 (9).jpg",
+            "link": "#",
+            "readMore": false
+        },
+        {
+            "title": "Blog Title",
+            "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum.",
+            "image": "/1 (9).jpg",
+            "link": "#",
+            "readMore": true
+        }
+    ],
+    "caseStudies": [
+        {
+            "title": "Blog Title",
+            "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum.",
+            "image": "/1 (8).jpg",
+            "readMore": true
+        }
+    ],
+    "articales": [
+        {
+            "title": "Blog Title",
+            "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum.",
+            "image": "/1 (7).jpg",
+            "link": "#",
+            "readMore": false
+        },
+        {
+            "title": "Blog Title",
+            "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum.",
+            "image": "/1 (7).jpg",
+            "link": "#",
+            "readMore": false
+        },
+        {
+            "title": "Blog Title",
+            "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum.",
+            "image": "/1 (5).jpg",
+            "link": "#",
+            "readMore": false
+        },
+        {
+            "title": "Blog Title",
+            "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum.",
+            "image": "/1 (4).jpg",
+            "link": "#",
+            "readMore": false
+        },
+        {
+            "title": "Blog Title",
+            "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum.",
+            "image": "/1 (9).jpg",
+            "link": "#",
+            "readMore": true
+        }
+    ]
+}

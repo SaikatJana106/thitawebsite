@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "image": "/cer1.jpg",
+    "title": "ISO 9001:2015 Certification",
+    "description": "Certified for maintaining a quality management system that consistently provides products and services meeting customer and regulatory requirements."
+  },
+  {
+    "id": 2,
+    "image": "/cer2.jpg",
+    "title": "ISO/IEC 27001:2013",
+    "description": "Certified for maintaining a quality management system that consistently provides products and services meeting customer and regulatory requirements."
+  },
+  {
+    "id": 3,
+    "image": "/cer3.jpg",
+    "title": "OSHA Compliance Certificate",
+    "description": "Certified for maintaining a quality management system that consistently provides products and services meeting customer and regulatory requirements."
+  }
+]

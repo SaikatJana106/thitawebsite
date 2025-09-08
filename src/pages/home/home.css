@@ -1,0 +1,66 @@
+/* .hover-gradient-text {
+  position: relative;
+  color: #918989;
+}
+
+.hover-gradient-text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  color: transparent;
+  background: radial-gradient(30px circle at var(--x, 50%) var(--y, 0%),
+      #23D4DE,
+      #9747FF,
+      transparent 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: pre-wrap;
+} */
+
+.hover-gradient-text {
+  position: relative;
+  display: inline-block;
+  color: white; 
+}
+
+.hover-gradient-text::before,
+.hover-gradient-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  white-space: pre-wrap;
+}
+
+.hover-gradient-text::before {
+  color: transparent;
+  background: radial-gradient(
+    100px circle at var(--x, 50%) var(--y, 0%),
+    rgba(35, 212, 222, 0.6),
+    rgba(151, 71, 255, 0.4),
+    transparent 60%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 2;
+}
+
+.hover-gradient-text::after {
+  background: radial-gradient(
+    25px circle at var(--x, 50%) var(--y, 0%),
+    rgba(35, 212, 222, 0.6)20%,
+    rgba(151, 71, 255, 0.4),
+    transparent 60%
+  );
+  filter: blur(2px);
+  opacity: 0.9;
+  z-index: 1;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Ahmed Al Mansoori",
+    "image": "https://randomuser.me/api/portraits/men/10.jpg",
+    "role": "Chief Executive Officer"
+  },
+  {
+    "name": "Fatima Al Suwaidi",
+    "image": "https://randomuser.me/api/portraits/women/65.jpg",
+    "role": "Chief Technology Officer"
+  },
+  {
+    "name": "Omar Bin Khalifa",
+    "image": "https://randomuser.me/api/portraits/men/22.jpg",
+    "role": "Head of Cybersecurity"
+  },
+  {
+    "name": "Layla Hassan",
+    "image": "https://randomuser.me/api/portraits/women/45.jpg",
+    "role": "Product Manager"
+  },
+  {
+    "name": "Mohammed Al Nuaimi",
+    "image": "https://randomuser.me/api/portraits/men/75.jpg",
+    "role": "Senior Software Engineer"
+  },
+  {
+    "name": "Noor Al Marri",
+    "image": "https://randomuser.me/api/portraits/women/32.jpg",
+    "role": "UI/UX Designer"
+  },
+  {
+    "name": "Salem Al Dhaheri",
+    "image": "https://randomuser.me/api/portraits/men/27.jpg",
+    "role": "Cloud Infrastructure Lead"
+  },
+  {
+    "name": "Ayesha Al Mazrouei",
+    "image": "https://randomuser.me/api/portraits/women/58.jpg",
+    "role": "Marketing & Communications"
+  },
+  {
+    "name": "Zayed Al Qubaisi",
+    "image": "https://randomuser.me/api/portraits/men/39.jpg",
+    "role": "Data Scientist"
+  },
+  {
+    "name": "Reem Al Shamsi",
+    "image": "https://randomuser.me/api/portraits/women/71.jpg",
+    "role": "Business Analyst"
+  }
+]

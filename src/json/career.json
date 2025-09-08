@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Frontend Developer",
+    "languages": ["JavaScript", "React", "CSS"],
+    "description": "Build responsive user interfaces and deliver smooth user experiences."
+  },
+  {
+    "title": "Backend Engineer",
+    "languages": ["Node.js", "MongoDB", "Express"],
+    "description": "Develop scalable APIs and manage server-side logic for dynamic web apps."
+  },
+  {
+    "title": "Full Stack Developer",
+    "languages": ["React", "Node.js", "MySQL"],
+    "description": "Work across the stack to create end-to-end web solutions and features."
+  },
+  {
+    "title": "DevOps Engineer",
+    "languages": ["Docker", "AWS", "Linux"],
+    "description": "Automate deployments, monitor systems, and improve infrastructure reliability."
+  },
+  {
+    "title": "Mobile App Developer",
+    "languages": ["Flutter", "Dart", "Firebase"],
+    "description": "Create cross-platform mobile applications with intuitive user interfaces."
+  }
+]

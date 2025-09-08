@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Artificial Intelligence",
+    "details": [
+      "Al Strategy framework development",
+      "Adoption Road-mapping",
+      "Al focused workshops and training planning",
+      "Audit readiness",
+      "Al Infrastructure Planning"
+    ],
+    "image": "/1 (13).jpg"
+  },
+  {
+    "title": "Audio Visual",
+    "details": [
+      "Advanced audio visual and surveillance systems architecture",
+      "Physical Security Enhancements",
+      "Operational efficiency and experience improvement"
+    ],
+    "image": "/1 (12).jpg"
+  },
+  {
+    "title": "Cybersecurity",
+    "details": [
+      "Risk management & threat mitigation strategy creation",
+      "In-depth cybersecurity assessments",
+      "Proactive improvement planning",
+      "Security awareness training"
+    ],
+    "image": "/1 (15).jpg"
+  },
+  {
+    "title": "IT Consulting and Auditing",
+    "details": [
+      "Strategic Planning",
+      "Strategic Planning",
+      "Datacentre Consultation and improvement planning",
+      "IT Service Improvement Planning",
+      "IT Service Cost Optimisation",
+      "Pre-audit assessments and readiness planning"
+    ],
+    "image": "/1 (14).jpg"
+  }
+]
