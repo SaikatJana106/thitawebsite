@@ -405,80 +405,87 @@ const Home = () => {
                 id="service-scroll-section"
                 className="h-[300vh] md:h-[400vh] relative text-white z-10 w-full mx-auto"
             >
-                <div className="sticky top-0 h-screen overflow-hidden flex justify-center items-center">
-                    <h1 className="text-[clamp(3rem,18vw,50rem)] font-black z-0 pointer-events-none select-none flex gap-1 md:gap-2">
-                        {"SERVICES".split("").map((char, index) => {
-                            const delay = index * 0.05;
-                            let introTransform = "translateY(100vh)";
-                            let introOpacity = "0";
+                <div className="sticky top-0 h-screen overflow-hidden flex flex-col justify-center items-center">
+                    <div className='relative h-[100vh] flex justify-center items-center w-full'>
+                        <h1 className="text-[clamp(3rem,18vw,50rem)] font-black z-0 pointer-events-none select-none flex gap-1 md:gap-2">
+                            {"SERVICES".split("").map((char, index) => {
+                                const delay = index * 0.05;
+                                let introTransform = "translateY(100vh)";
+                                let introOpacity = "0";
 
-                            if (letterAnimationProgress > delay) {
-                                const letterProgress = (letterAnimationProgress - delay) / 0.3;
-                                introTransform = `translateY(${(1 - Math.min(letterProgress, 1)) * 100}vh)`;
-                                introOpacity = `${Math.min(letterProgress, 1)}`;
-                            }
-
-                            let outroTransform = "translateY(0)";
-                            let outroOpacity = "1";
-
-                            if (serviceScrollProgress > 0.8) {
-                                const outroDelay = (7 - index) * 0.05;
-                                const outroProgress = Math.min((serviceScrollProgress - 0.8) / 0.2, 1);
-                                if (outroProgress > outroDelay) {
-                                    const letterOutroProgress = (outroProgress - outroDelay) / 0.3;
-                                    outroTransform = `translateY(${-Math.min(letterOutroProgress, 1) * 100}vh)`;
-                                    outroOpacity = `${1 - Math.min(letterOutroProgress, 1)}`;
+                                if (letterAnimationProgress > delay) {
+                                    const letterProgress = (letterAnimationProgress - delay) / 0.3;
+                                    introTransform = `translateY(${(1 - Math.min(letterProgress, 1)) * 100}vh)`;
+                                    introOpacity = `${Math.min(letterProgress, 1)}`;
                                 }
-                            }
 
-                            const combinedTransform = serviceScrollProgress > 0.8 ?
-                                `${outroTransform}` :
-                                `${introTransform} ${outroTransform}`;
+                                let outroTransform = "translateY(0)";
+                                let outroOpacity = "1";
 
-                            const combinedOpacity = serviceScrollProgress > 0.8 ?
-                                outroOpacity :
-                                (serviceScrollProgress > 0.2 ? introOpacity : introOpacity);
+                                if (serviceScrollProgress > 0.8) {
+                                    const outroDelay = (7 - index) * 0.05;
+                                    const outroProgress = Math.min((serviceScrollProgress - 0.8) / 0.2, 1);
+                                    if (outroProgress > outroDelay) {
+                                        const letterOutroProgress = (outroProgress - outroDelay) / 0.3;
+                                        outroTransform = `translateY(${-Math.min(letterOutroProgress, 1) * 100}vh)`;
+                                        outroOpacity = `${1 - Math.min(letterOutroProgress, 1)}`;
+                                    }
+                                }
 
-                            return (
-                                <span
-                                    key={index}
-                                    ref={(el) => (letterRefs.current[index] = el)}
-                                    className="transition-all duration-300 ease-out"
-                                    style={{
-                                        transform: combinedTransform,
-                                        opacity: combinedOpacity,
-                                        color: activeLetters[index] ? "#6927DA" : "white",
-                                    }}
-                                >
-                                    {char}
-                                </span>
-                            );
-                        })}
-                    </h1>
+                                const combinedTransform = serviceScrollProgress > 0.8 ?
+                                    `${outroTransform}` :
+                                    `${introTransform} ${outroTransform}`;
 
-                    <div
-                        ref={cardContainerRef}
-                        className="absolute top-1/2 left-0 -translate-y-1/2 flex gap-5 px-4 md:px-10 z-10 transition-transform duration-100"
-                        style={{ transform: `translateX(${translateX}px)` }}
-                    >
-                        {servicedata.map((item, i) => (
-                            <div
-                                key={i}
-                                className={`w-[clamp(12rem,25vw,20rem)] h-[clamp(8rem,18vw,15rem)] min-h-fit relative p-6 bg-[#09093C] flex justify-center items-start flex-col rounded-xl transition-all duration-100 ease-in-out
-                                ${i % 2 === 0 ? 'mb-10' : 'mt-10'}
+                                const combinedOpacity = serviceScrollProgress > 0.8 ?
+                                    outroOpacity :
+                                    (serviceScrollProgress > 0.2 ? introOpacity : introOpacity);
+
+                                return (
+                                    <span
+                                        key={index}
+                                        ref={(el) => (letterRefs.current[index] = el)}
+                                        className="transition-all duration-300 ease-out min-h-screen"
+                                        style={{
+                                            transform: combinedTransform,
+                                            opacity: combinedOpacity,
+                                            color: activeLetters[index] ? "#6927DA" : "white",
+                                            
+                                            display:'flex',
+                                            justifyContent:'center',
+                                            alignItems:'center'
+                                        }}
+                                    >
+                                        {char}
+                                    </span>
+                                );
+                            })}
+                        </h1>
+
+                        <div
+                            ref={cardContainerRef}
+                            className="mt-[-30px]  flex gap-5 px-4 md:px-10 z-10 transition-transform duration-100 absolute bottom-0 left-0 "
+                            style={{ transform: `translateX(${translateX}px)` }}
+                        >
+                            {servicedata.map((item, i) => (
+                                <div
+                                    key={i}
+                                    className={`w-[320px] h-[clamp(8rem,18vw,15rem)] min-h-fit relative p-6 bg-[#09093C] flex justify-center items-start flex-col rounded-xl transition-all duration-100 ease-in-out
+                                ${i % 2 === 0 ? 'mb-15' : 'mt-5'}
                                 ${isScrolling ? 'scale-[0.97] shadow-md shadow-transparent' : 'scale-100 shadow-xl shadow-black/60'}`}
-                            >
-                                <div className='flex gap-1 self-end absolute top-[10%]'>
-                                    <div className='border border-[#B555D3] rounded-full p-2'>
-                                        <div className='bg-[#B555D3] h-1 w-1 rounded-full'></div>
+                                >
+                                    <div className='flex gap-1 self-end absolute top-[10%]'>
+                                        <div className='border border-[#B555D3] rounded-full p-2'>
+                                            <div className='bg-[#B555D3] h-1 w-1 rounded-full'></div>
+                                        </div>
+                                        <small>#{i + 1}</small>
                                     </div>
-                                    <small>#{i + 1}</small>
+                                    <h3 className="text-[clamp(1rem,1.5vw,50rem)] font-bold">{item.title}</h3>
+                                    <p className="text-[clamp(0.70rem,0.90vw,50rem)] text-gray-300 mt-2">{item.des}</p>
                                 </div>
-                                <h3 className="text-[clamp(1rem,1.5vw,50rem)] font-bold">{item.title}</h3>
-                                <p className="text-[clamp(0.70rem,0.90vw,50rem)] text-gray-300 mt-2">{item.des}</p>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
+
                 </div>
             </section>
             {/* service */}
