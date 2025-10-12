@@ -14,7 +14,7 @@ const ContactUs = () => {
 
 
                     <h2 className="text-[#B555D3] text-[clamp(2.5rem,4vw,50rem)] font-bold mb-10 tracking-widest exo" 
-                    // style={{ fontFamily: "Ethnocentric" }}
+                    style={{ fontFamily: "Ethnocentric" }}
                     >
                         CONTACT US
                     </h2>
@@ -69,7 +69,7 @@ const ContactUs = () => {
             <section className=" text-white py-16 px-6 md:px-24 min-h-screen z-10">
                 <div className='w-[85%] max-lg:w-[98%] '>
                     <h2 className="text-[#B555D3]  font-bold mb-12 tracking-widest leading-snug uppercase exo text-[clamp(2rem,3vw,50rem)]" 
-                    // style={{ fontFamily: "Ethnocentric" }}
+                    style={{ fontFamily: "Ethnocentric" }}
                     >
                         Get In Touch <br /> With Our Team
                     </h2>
@@ -147,8 +147,8 @@ const ContactUs = () => {
                         <div className='w-full flex justify-end items-end'>
                             <div className="scene">
                                 <div className="cube">
-                                    <small className="side top text-[#6927DA] text-2xl font-thin ">Send Enquiry <span className="inline-block w-2 h-2 bg-[#FFFFFF]"></span></small>
-                                    <span className="side front text-white text-2xl font-thin mt-[8%]">Send Enquiry <span className="inline-block w-2 h-2 bg-[#6927DA]"></span></span>
+                                    <small className="side top text-[#B555D3] text-2xl font-thin ">Send Enquiry <span className="inline-block w-2 h-2 bg-[#FFFFFF]"></span></small>
+                                    <span className="side front text-white text-2xl font-thin mt-[8%]">Send Enquiry <span className="inline-block w-2 h-2 bg-[#B555D3]"></span></span>
                                 </div>
                             </div>
                         </div>

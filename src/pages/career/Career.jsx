@@ -6,7 +6,7 @@ const Career = () => {
             <section className="h-[90vh] flex justify-between items-center  text-white">
                 <div className="w-[85%] mx-auto">
                     <h1 className="text-[clamp(3rem,5vw,50rem)] font-bold text-[#B555D3] mb-6 exo max-md:text-center"
-                    // style={{ fontFamily: "Ethnocentric" }}
+                    style={{ fontFamily: "Ethnocentric" }}
                     >CAREERS</h1>
                     <div className="flex justify-between h-[30dvh] max-md:flex-col">
                         <p className="w-1/2 text-[clamp(1.25rem,1vw,50rem)] max-md:w-full max-md:text-center">
@@ -28,7 +28,7 @@ const Career = () => {
             <section className="min-h-screen flex items-center  text-white ">
                 <div className='max-w-[85%] mx-auto '>
                     <h2 className="text-[clamp(2rem,3vw+1rem,50rem)] font-bold text-white my-[5%] exo"
-                    // style={{ fontFamily: "Ethnocentric" }}
+                    style={{ fontFamily: "Ethnocentric" }}
                     >
                         WHY WORK<br />
                         AT THETA?
@@ -71,7 +71,7 @@ const Career = () => {
 
             <div className=" min-h-screen text-white p-10 w-[85%] mx-auto max-lg:w-[95%]">
                 <h1 className="text-[clamp(1.75rem,3vw+0.40rem,50rem)]  font-bold mb-10 exo max-lg:mb-0"
-                // style={{ fontFamily: "Ethnocentric" }}
+                style={{ fontFamily: "Ethnocentric" }}
                 >Open Positions (0{jobs.length})</h1>
                 <div className='flex justify-end max-w-[85%]  mx-auto max-lg:w-[95%]'>
                     <div className="space-y-10">

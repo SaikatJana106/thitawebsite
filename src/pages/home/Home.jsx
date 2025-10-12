@@ -23,24 +23,99 @@ const Home = () => {
     };
 
     //    partners
-    const [ourpartners, setOurPartners] = useState(partners)
+    // const [ourpartners, setOurPartners] = useState(partners)
+    // const [scrollY, setScrollY] = useState(0);
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const section = document.getElementById('partners-section');
+    //         if (!section) return;
+
+    //         const { top } = section.getBoundingClientRect();
+    //         const windowHeight = window.innerHeight;
+    //         const sectionHeight = section.offsetHeight;
+
+    //         const scrollProgress = Math.min(Math.max((windowHeight - top) / sectionHeight, 0), 1);
+    //         setScrollY(scrollProgress);
+    //     };
+
+    //     window.addEventListener('scroll', handleScroll);
+    //     return () => window.removeEventListener('scroll', handleScroll);
+    // }, []);
+    const [ourpartners] = useState(partners);
     const [scrollY, setScrollY] = useState(0);
+    const [sectionScrollHeight, setSectionScrollHeight] = useState(3000);
+
+    const partnersSectionRef = useRef(null);
+    const topRowRef = useRef(null);
+
+    // --- Configuration ---
+    // The fixed pixel distance you want the rows to be OFFSET at the start (scrollY=0).
+    const INITIAL_GAP_OFFSET = 800;
+    // Multiplier for vertical scroll length
+    const SCROLL_MULTIPLIER = 2.5;
+    // ----------------------
+
+    // --- EFFECT 1: Calculate the Dynamic Section Height ---
+    useEffect(() => {
+        if (topRowRef.current) {
+            const totalRowWidth = topRowRef.current.scrollWidth;
+            const viewportWidth = window.innerWidth;
+
+            // 1. Calculate the distance needed just to scroll the row completely out of sight (no initial gap).
+            const scrollOutDistance = Math.max(totalRowWidth - viewportWidth, 0);
+
+            // 2. The total horizontal distance the row must travel from start to end.
+            // Travel = (Initial Gap) + (Scroll Out Distance).
+            const totalHorizontalMovement = INITIAL_GAP_OFFSET + scrollOutDistance;
+
+            // 3. Calculate the total vertical height needed for the animation.
+            const animationHeight = totalHorizontalMovement * SCROLL_MULTIPLIER;
+
+            // 4. Set final height: 100vh (sticky start) + animationHeight + 100vh (scroll-out)
+            const finalHeight = window.innerHeight + animationHeight + window.innerHeight;
+
+            // Use a function to ensure recalculation on window resize
+            setSectionScrollHeight(Math.max(finalHeight, window.innerHeight * 3));
+        }
+
+        const handleResize = () => {
+            // Setting a temporary value forces the effect to re-run and recalculate
+            setSectionScrollHeight(0);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, [ourpartners, sectionScrollHeight]);
+
+
+    // --- EFFECT 2: Handle Scroll and Update scrollY ---
     useEffect(() => {
         const handleScroll = () => {
-            const section = document.getElementById('partners-section');
+            const section = partnersSectionRef.current;
             if (!section) return;
 
             const { top } = section.getBoundingClientRect();
             const windowHeight = window.innerHeight;
             const sectionHeight = section.offsetHeight;
 
-            const scrollProgress = Math.min(Math.max((windowHeight - top) / sectionHeight, 0), 1);
+            const scrollAreaLength = sectionHeight - windowHeight;
+
+            const scrollProgress = Math.min(
+                Math.max((windowHeight - top) / scrollAreaLength, 0),
+                1
+            );
+
             setScrollY(scrollProgress);
         };
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    // This variable represents the TOTAL distance (in + out) the rows must travel.
+    const totalMoveDistance = partnersSectionRef.current
+        ? Math.max(topRowRef.current.scrollWidth - window.innerWidth, 0) + INITIAL_GAP_OFFSET
+        : INITIAL_GAP_OFFSET + 800; // Fallback
     //    partners
 
     // clients review
@@ -244,8 +319,8 @@ const Home = () => {
                 {/* Learn More Button */}
                 <Link to="/services" className="scene mt-5">
                     <div className="cube">
-                        <small className="side top font-light text-[#6927DA] text-[clamp(2rem,2.5vw,50rem)]">Learn More <span className="inline-block w-1.5 h-1.5 bg-[#FFFFFF]"></span></small>
-                        <span className="side front font-light text-white text-[clamp(2rem,2.5vw,50rem)]">Learn More <span className="inline-block w-1.5 h-1.5 bg-[#6927DA]"></span></span>
+                        <small className="side top font-light text-[#B555D3] text-[clamp(2rem,2.5vw,50rem)]">Learn More <span className="inline-block w-1.5 h-1.5 bg-[#FFFFFF]"></span></small>
+                        <span className="side front font-light text-white text-[clamp(2rem,2.5vw,50rem)]">Learn More <span className="inline-block w-1.5 h-1.5 bg-[#B555D3]"></span></span>
                     </div>
                 </Link>
             </section>
@@ -254,7 +329,7 @@ const Home = () => {
             {/* about start */}
             <section className='max-w-[90%] md:max-w-[80%] mx-auto h-[70dvh] mt-[30px]  relative z-10'>
                 <h2 className="text-[clamp(3rem,5vw,50rem)]  text-[#B555D3] exo"
-                // style={{ fontFamily: "Ethnocentric" }}
+                style={{ fontFamily: "Ethnocentric" }}
                 >
                     About <span className="font-bold">Us</span>
                     {/* <span className="inline-block rounded-full w-4 h-4 bg-[#7D86D7]"></span> */}
@@ -272,8 +347,8 @@ const Home = () => {
                             </div>
                             <Link to="/about" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="scene mt-[5%]">
                                 <div className="cube">
-                                    <small className="side top font-light text-[#6927DA] text-4xl">Read More <span className="inline-block w-1.5 h-1.5 bg-[#FFFFFF]"></span></small>
-                                    <span className="side front font-light text-white text-4xl">Read More <span className="inline-block w-1.5 h-1.5 bg-[#6927DA]"></span></span>
+                                    <small className="side top font-light text-[#B555D3] text-4xl">Read More <span className="inline-block w-1.5 h-1.5 bg-[#FFFFFF]"></span></small>
+                                    <span className="side front font-light text-white text-4xl">Read More <span className="inline-block w-1.5 h-1.5 bg-[#B555D3]"></span></span>
                                 </div>
                             </Link>
                         </div>
@@ -367,7 +442,7 @@ const Home = () => {
                                     style={{
                                         transform: combinedTransform,
                                         opacity: combinedOpacity,
-                                        color: activeLetters[index] ? "#6927DA" : "white",
+                                        color: activeLetters[index] ? "#B555D3" : "white",
                                     }}
                                 >
                                     {char}
@@ -448,11 +523,11 @@ const Home = () => {
                                         style={{
                                             transform: combinedTransform,
                                             opacity: combinedOpacity,
-                                            color: activeLetters[index] ? "#6927DA" : "white",
-                                            
-                                            display:'flex',
-                                            justifyContent:'center',
-                                            alignItems:'center'
+                                            color: activeLetters[index] ? "#B555D3" : "white",
+
+                                            display: 'flex',
+                                            justifyContent: 'center',
+                                            alignItems: 'center'
                                         }}
                                     >
                                         {char}
@@ -491,12 +566,13 @@ const Home = () => {
             {/* service */}
             {/* service */}
 
-            {/* why Theta start #6927DA*/}
+            {/* why Theta start #B555D3*/}
             <section className='relative z-10 text-white px-4 md:px-10 py-20'>
                 <div className='max-w-[90%] md:max-w-[85%] mx-auto'>
-                    <h1 className="text-[clamp(3rem,5vw,4rem)] font-light text-[#B555D3]" data-aos="zoom-out">
+                    <h1 className="text-[clamp(3rem,5vw,4rem)] font-light text-[#B555D3]" style={{ fontFamily: "Ethnocentric" }} data-aos="zoom-out">
                         Why Choose <br />
-                        <span className="font-bold">Theta</span>
+                        <span className="font-bold" 
+                        style={{ fontFamily: "Ethnocentric" }}>Theta</span>
                         <span className='text-[#B555D3]' style={{ fontFamily: "Ethnocentric" }}> ?</span>
                     </h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-8 mt-10 w-fit">
@@ -552,69 +628,72 @@ const Home = () => {
             {/* our partners */}
             <section
                 id="partners-section"
-                className="h-[300vh] relative text-white "
+                ref={partnersSectionRef}
+                style={{ height: `${sectionScrollHeight}px` }}
+                className="relative text-white"
             >
                 <div className="sticky top-[5%] h-screen flex flex-col justify-end overflow-hidden">
                     <div className="relative h-[629px]">
-                        <h1 className="text-[clamp(3rem,5vw,50rem)] text-[#B555D3] text-left max-w-[85%] mx-auto exo"
-                        // style={{ fontFamily: "Ethnocentric" }}
-                        >
-                            Our <span className="font-bold exo"
-                            // style={{ fontFamily: "Ethnocentric" }}
-                            >Partners</span>
-                            {/* <span className="inline-block w-2 h-2 rounded-full bg-[#7D86D7]"></span> */}
+                        <h1 className="text-[clamp(3rem,5vw,50rem)] text-[#B555D3] text-left max-w-[85%] mx-auto exo">
+                            Our <span className="font-bold exo">Partners</span>
                         </h1>
                         <div className=" inset-0">
 
-                            {/* Top Row */}
+                            {/* Top Row - Starts with gap on the left, moves left */}
                             <div
+                                ref={topRowRef}
                                 className="absolute top-[20%] w-full flex space-x-10"
                                 style={{
-                                    transform: `translateX(${(1 - scrollY) * 800}px)`,
-                                    transition: 'transform 0.05s ease-in-out',
+                                    // Start (scrollY=0): translateX(INITIAL_GAP_OFFSET) -> Pushed right, leaving a gap on the left.
+                                    // End (scrollY=1): translateX(INITIAL_GAP_OFFSET - totalMoveDistance) -> Pushed far left (off-screen).
+
+                                    // Formula: Start Position - (Progress * Total Distance)
+                                    transform: `translateX(${INITIAL_GAP_OFFSET - scrollY * totalMoveDistance}px)`,
+                                    transition: 'none',
                                 }}
                             >
                                 {ourpartners.map((item, i) => (
                                     <div
-                                        key={i}
-                                        className="min-w-[247px] min-h-[157px] w-fit h-fit  bg-[#09093C] rounded-xl flex justify-center items-center"
+                                        key={`top-${i}`}
+                                        className="min-w-[247px] min-h-[157px] w-fit h-fit bg-[#09093C] rounded-xl flex justify-center items-center flex-shrink-0"
                                     >
                                         <img src={item.image} alt={`top-${i}`} className="h-[130px] object-contain object-center" />
                                     </div>
                                 ))}
                             </div>
 
-                            {/* Circle */}
-                            {/* Circle */}
+                            {/* Circle - Rotates */}
                             <div
                                 className="absolute top-[50%] left-[50%] z-50"
                                 style={{
-                                    transform: `translate(-50%, -50%) rotate(${scrollY * 360}deg)`,
-                                    transition: 'transform 0.05s ease-in-out',
+                                    transform: `translate(-50%, -50%) rotate(${scrollY * 360 * 3}deg)`,
+                                    transition: 'none',
                                 }}
                             >
                                 <img src="/partners/circle.png" alt="circle" className="w-[100px]" />
                             </div>
 
-
-                            {/* Bottom Row */}
+                            {/* Bottom Row - Starts with gap on the right, moves right */}
                             <div
                                 className="absolute bottom-[20%] w-full flex space-x-10 justify-end"
                                 style={{
-                                    transform: `translateX(-${(1 - scrollY) * 800}px)`,
-                                    transition: 'transform 0.05s ease-in-out',
+                                    // Start (scrollY=0): translateX(-INITIAL_GAP_OFFSET) -> Pushed left, leaving a gap on the right.
+                                    // End (scrollY=1): translateX(-INITIAL_GAP_OFFSET + totalMoveDistance) -> Pushed far right (off-screen).
+
+                                    // Formula: Start Position + (Progress * Total Distance)
+                                    transform: `translateX(${-INITIAL_GAP_OFFSET + scrollY * totalMoveDistance}px)`,
+                                    transition: 'none',
                                 }}
                             >
                                 {ourpartners.map((item, i) => (
                                     <div
-                                        key={i}
-                                        className="min-w-[247px] min-h-[157px] w-fit h-fit  bg-[#09093C] rounded-xl flex justify-center items-center"
+                                        key={`bottom-${i}`}
+                                        className="min-w-[247px] min-h-[157px] w-fit h-fit bg-[#09093C] rounded-xl flex justify-center items-center flex-shrink-0"
                                     >
                                         <img src={item.image} alt={`bottom-${i}`} className="h-[130px] object-contain object-center" />
                                     </div>
                                 ))}
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -629,14 +708,14 @@ const Home = () => {
 
                         {/* Title at top-left */}
                         <div className="text-[clamp(2.5rem,4vw,50rem)] text-[#B555D3] ml-[5%] exo"
-                        // style={{ fontFamily: "Ethnocentric" }}
+                        style={{ fontFamily: "Ethnocentric" }}
                         >
                             <div className=' gap-2'>
                                 <span data-aos="fade-up">What</span> <span data-aos="fade-up">Are</span><span data-aos="fade-up">They</span><br />
                             </div>
                             <div className='flex gap-2 mt-2'>
                                 <h1 className='font-bold text-[#B555D3] text-[clamp(2.5rem,4vw,50rem)] exo' data-aos="fade-up"
-                                // style={{ fontFamily: "Ethnocentric" }}
+                                style={{ fontFamily: "Ethnocentric" }}
                                 >Saying</h1> <span className="inline-block w-2 h-2 rounded-full bg-[#7D86D7] self-end mb-[1%]"></span>
 
                             </div>

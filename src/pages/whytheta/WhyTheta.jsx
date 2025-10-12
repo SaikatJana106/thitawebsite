@@ -16,8 +16,12 @@ const WhyTheta = () => {
             <section className="text-white py-16 px-6 md:px-20">
                 {/* Top Headings */}
                 <div className="mb-10 max-md:mb-0 max-md:text-center">
-                    <h2 className="text-[clamp(1.2rem,2.6vw,50rem)] font-bold exo">Your Strategic Partner in</h2>
-                    <h2 className="text-[clamp(1.2rem,2.6vw,50rem)] font-bold mt-2 exo">Digital Transformation.</h2>
+                    <h2 className="text-[clamp(1.2rem,2.6vw,50rem)] font-bold exo"
+                        style={{ fontFamily: "Ethnocentric" }}
+                    >Your Strategic Partner in</h2>
+                    <h2 className="text-[clamp(1.2rem,2.6vw,50rem)] font-bold mt-2 exo"
+                        style={{ fontFamily: "Ethnocentric" }}
+                    >Digital Transformation.</h2>
                 </div>
 
                 {/* Bottom Content */}
@@ -69,10 +73,14 @@ const WhyTheta = () => {
                 <div className='w-[85%] mx-auto text-white py-20 px-6 xl:px-24 flex flex-col xl:flex-row items-center justify-between'>
                     {/* Left Section */}
                     <div className="text-[#B555D3]  font-bold font-orbitron uppercase leading-tight text-center md:text-left xl:w-1/2"
-                    // style={{ fontFamily: "Ethnocentric" }}
+                        style={{ fontFamily: "Ethnocentric" }}
                     >
-                        <p className='roboto-semi text-[clamp(3rem,4vw,50rem)]'>What Sets</p>
-                        <p className='roboto-semi  text-[clamp(3rem,4vw,50rem)]'>Us Apart ?</p>
+                        <p className='roboto-semi text-[clamp(3rem,4vw,50rem)]'
+                            style={{ fontFamily: "Ethnocentric" }}
+                        >What Sets</p>
+                        <p className='roboto-semi  text-[clamp(3rem,4vw,50rem)]'
+                            style={{ fontFamily: "Ethnocentric" }}
+                        >Us Apart ?</p>
                     </div>
 
                     {/* Right Section */}
@@ -116,6 +124,8 @@ const WhyTheta = () => {
                             </button> */}
                         <h1
                             className="text-center text-2xl  text-gray-100 exo"
+                            style={{ fontFamily: "Ethnocentric" }}
+
                         >
                             Our Core Values
                         </h1>

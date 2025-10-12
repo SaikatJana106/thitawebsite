@@ -30,7 +30,7 @@ const NewsAtTheta = () => {
                 <div className='w-[85%] mx-auto h-fit'>
                     {/* Header */}
                     <h1 className="text-5xl md:text-6xl font-bold text-[#B555D3] mb-10 tracking-wide text-center exo"
-                    // style={{ fontFamily: "Ethnocentric" }}
+                    style={{ fontFamily: "Ethnocentric" }}
                     >
 
                         NEWS AT THETA
@@ -63,7 +63,7 @@ const NewsAtTheta = () => {
                 <div className="w-[85%] mx-auto h-fit">
                     {/* Header */}
                     <h2 className="text-4xl md:text-5xl font-bold text-[#B555D3] mb-4 exo"
-                    // style={{ fontFamily: "Ethnocentric" }}
+                    style={{ fontFamily: "Ethnocentric" }}
                     >
                         Popular Now
                     </h2>
@@ -120,7 +120,7 @@ const NewsAtTheta = () => {
                 <div className="w-[85%] mx-auto h-fit">
                     {/* Header */}
                     <h2 className="text-4xl md:text-5xl font-bold text-[#B555D3] mb-4 exo"
-                    // style={{ fontFamily: "Ethnocentric" }}
+                    style={{ fontFamily: "Ethnocentric" }}
                     >
                         Resent Articles
                     </h2>
@@ -177,7 +177,7 @@ const NewsAtTheta = () => {
                 <div className="w-[85%] mx-auto h-fit">
                     {/* Header */}
                     <h2 className="text-4xl md:text-5xl font-bold text-[#B555D3] mb-4 exo"
-                    // style={{ fontFamily: "Ethnocentric" }}
+                    style={{ fontFamily: "Ethnocentric" }}
                     >
                         Case Studies
                     </h2>
@@ -217,7 +217,7 @@ const NewsAtTheta = () => {
             </section>
             <section className='min-h-screen w-[85%] mx-auto'>
                 <h1 className='text-[#B555D3] text-6xl exo'
-                // style={{ fontFamily: "Ethnocentric" }}
+                style={{ fontFamily: "Ethnocentric" }}
                 >All Articals</h1>
                 <p className='text-white roboto-semi'>We share common trands, opinions, short and long story from the team behimd company</p>
                 <div className='my-[5%]'>

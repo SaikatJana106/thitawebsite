@@ -304,7 +304,7 @@ const About = () => {
       <div className="min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-3xl">
           <h1 className="text-[clamp(1.5rem,3vw+3px,50rem)] leading-tight font-bold text-[#B555D3] tracking-wide uppercase mb-6 exo"
-          // style={{ fontFamily: "Ethnocentric" }}
+          style={{ fontFamily: "Ethnocentric" }}
           >
             Know More About<br />Our Journey
           </h1>
@@ -337,7 +337,7 @@ const About = () => {
           <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div>
               <h1 className="text-[clamp(2rem,3vw+5px,50rem)] font-bold text-[#B555D3] uppercase tracking-wide mb-6 exo max-md:text-center"
-              //  style={{ fontFamily: "Ethnocentric" }}
+               style={{ fontFamily: "Ethnocentric" }}
               >
                 Behind the<br />Success
               </h1>
@@ -399,6 +399,7 @@ const About = () => {
           <h2
             ref={goalsHeadingRef}
             className="text-[clamp(1.5rem,4vw,50rem)] font-bold text-[#B555D3] uppercase tracking-wide text-left mb-8 md:mb-16 exo"
+            style={{ fontFamily: "Ethnocentric" }}
           >
             HOW WE DEFINE OUR <br />GOALS AT THETA
           </h2>
@@ -438,7 +439,7 @@ const About = () => {
       </div>
 
       {/* Team Section */}
-      <div className="py-8 md:py-12 px-4 text-white relative z-10">
+      {/* <div className="py-8 md:py-12 px-4 text-white relative z-10">
         <h2 className="text-center text-[clamp(1.2rem,2vw,50rem)] font-extrabold text-[#B555D3] tracking-wide mb-6 md:mb-10 uppercase exo">
           Our Team, Our Strength
         </h2>
@@ -475,7 +476,7 @@ const About = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Process Section */}
       <div className="h-[500vh] ">
@@ -503,7 +504,6 @@ const About = () => {
                   style={{
                     width: `${widthPercentage}%`,
                     opacity: widthPercentage > 0.5 ? 1 : 0,
-                    // Ensures minimum readable width
 
                   }}
                 >
@@ -531,7 +531,7 @@ const About = () => {
       {/* Certifications Section */}
       <section className=" py-12">
         <div className="container mx-auto px-4">
-          <h2 className="font-bold text-[#B555D3] text-center mb-8 exo text-[clamp(2rem,4vw,50rem)]">Theta Certifications</h2>
+          <h2 className="font-bold text-[#B555D3] text-center mb-8 exo text-[clamp(2rem,4vw,50rem)]" style={{ fontFamily: "Ethnocentric" }}>Theta Certifications</h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {certificates.map((cert, index) => (
               <div
@@ -552,9 +552,9 @@ const About = () => {
                   <h3 className="text-[#B555D3] font-semibold text-lg mb-2 text-center exo">
                     {cert.title}
                   </h3>
-                  <p className="text-gray-100 text-sm text-center roboto-semi">
+                  {/* <p className="text-gray-100 text-sm text-center roboto-semi">
                     {cert.description}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             ))}

@@ -8,7 +8,7 @@
       "Audit readiness",
       "Al Infrastructure Planning"
     ],
-    "image": "/1 (13).jpg"
+    "image": "/ai.png"
   },
   {
     "title": "Audio Visual",
@@ -17,7 +17,7 @@
       "Physical Security Enhancements",
       "Operational efficiency and experience improvement"
     ],
-    "image": "/1 (12).jpg"
+    "image": "/audio_visual.png"
   },
   {
     "title": "Cybersecurity",
@@ -27,7 +27,7 @@
       "Proactive improvement planning",
       "Security awareness training"
     ],
-    "image": "/1 (15).jpg"
+    "image": "/cyber_security.png"
   },
   {
     "title": "IT Consulting and Auditing",
@@ -39,6 +39,6 @@
       "IT Service Cost Optimisation",
       "Pre-audit assessments and readiness planning"
     ],
-    "image": "/1 (14).jpg"
+    "image": "/consulting_and_auditing.png"
   }
 ]

@@ -61,7 +61,7 @@ body {
 }
 
 .hover-purple:hover:after {
-  color: #6927DA;
+  color: #B555D3;
   /* Tailwind blue-500 */
 }
 
@@ -114,7 +114,7 @@ body {
 } */
 
 a.mask-link:hover span::after {
-  background-color: #6927DA;
+  background-color: #B555D3;
 }
 
 
@@ -132,7 +132,7 @@ a.mask-link span {
   position: relative;
   color: white;
   /* Fallback */
-  background: linear-gradient(to right, white 50%, #6927DA 50%);
+  background: linear-gradient(to right, white 50%, #B555D3 50%);
   background-size: 200% 100%;
   background-position: 0 0;
   /* start with white fully visible */

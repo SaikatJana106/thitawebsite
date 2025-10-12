@@ -35,7 +35,7 @@ const TopGoButton = () => {
             right: '20px',
             width: '50px',
             height: '50px',
-            backgroundColor: '#6927DA',
+            backgroundColor: '#B555D3',
             borderRadius: '50%',
             display: 'flex',
             justifyContent: 'center',

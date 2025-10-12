@@ -15,22 +15,22 @@ import About from './pages/about/About';
 import TopGoButton from './pages/topgobutton/TopGoButton';
 function App() {
 
-  //   useEffect(() => {
-  //   const script = document.createElement('script');
-  //   script.type = 'module';
-  //   script.src = 'https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js';
-  //   document.body.appendChild(script);
-  // }, []);
+    useEffect(() => {
+    const script = document.createElement('script');
+    script.type = 'module';
+    script.src = 'https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js';
+    document.body.appendChild(script);
+  }, []);
 
 
   return (
 
     <div className='bg-black'>
-      {/* {<spline-viewer
+      {<spline-viewer
         url="https://prod.spline.design/gH5W0xTo9YFfiN1x/scene.splinecode"
         className="fixed top-0 left-0 w-full h-full"
       />
-      } */}
+      }
       <Router>
         <Navbar />
 

@@ -3,10 +3,10 @@ import awardsData from "../../json/awards.json"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const Awards = () => {
-     useEffect(() => {
-            AOS.init({ duration: 1000 });
-        }, []);
-    
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, []);
+
     const [activeIndex, setActiveIndex] = useState(null);
 
     const handleToggle = (index) => {
@@ -28,11 +28,11 @@ const Awards = () => {
 
                     {/* Right - Text */}
                     <div className="w-full md:w-1/2 text-center md:text-left p-4 space-y-6">
-                        <h1 className="text-5xl font-bold text-[#B555D3] tracking-wide exo" 
-                        // style={{ fontFamily: "Ethnocentric" }}
+                        <h1 className="text-5xl font-bold text-[#B555D3] tracking-wide exo"
+                        style={{ fontFamily: "Ethnocentric" }}
                         >AWARDS</h1>
                         <p className="text-lg tracking-widest roboto-semi">A LEGACY OF DISTINCTION</p>
-                        <div className="w-[53%] h-px bg-gray-500 mb-3 relative mt-6 md:mt-[10%]"   data-aos="fade-right">
+                        <div className="w-[53%] h-px bg-gray-500 mb-3 relative mt-6 md:mt-[10%]" data-aos="fade-right">
                             <div className="w-1 h-1 bg-white rounded-full absolute right-0 top-1/2 transform -translate-y-1/2"></div>
                         </div>
                     </div>
@@ -59,23 +59,39 @@ const Awards = () => {
 
                             </div>
                         </div>
+                        {/* ${activeIndex === index
+                                ? 'max-h-fit opacity-100 translate-y-0 mt-2'
+                                : 'max-h-0 opacity-0 -translate-y-2' }*/}
                         <div
-                            className={`overflow-hidden transition-all duration-500 ease-in-out transform flex items-center justify-center ${activeIndex === index
-                                    ? 'max-h-fit opacity-100 translate-y-0 mt-2'
-                                    : 'max-h-0 opacity-0 -translate-y-2'
-                                }`}
+                            className={`overflow-hidden transition-all duration-500 ease-in-out transform flex items-center justify-center max-h-fit opacity-100 translate-y-0 mt-2`}
                         >
                             {/* <p className="text-gray-300 text-start text-xs">{award.subDescription}</p> */}
-                            <img src={award.image} alt="" />
+                            <div className="flex gap-4 justify-center items-center">
+                                <div className="w-1/2 h-72 flex justify-center items-center">
+                                    <img
+                                        className="max-h-full max-w-full object-contain"
+                                        src={award.image}
+                                        alt=""
+                                    />
+                                </div>
+                                <div className="w-1/2 h-72 flex justify-center items-center">
+                                    <img
+                                        className="max-h-full max-w-full object-contain"
+                                        src={award.imagesec}
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
                 ))}
             </div>
 
-            <div className='h-fit w-[85%] mx-auto'>
+            {/* <div className='h-fit w-[85%] mx-auto'>
                 <img className='h-full w-full object-cover object-center aspect-video  ' src="/awards2.jpg" alt="" />
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -32,8 +32,8 @@ const Navbar = () => {
       >
         <nav className="flex items-center justify-between text-white px-6 py-4">
           {/* Logo */}
-          <Link to="/" className='h-fit w-[clamp(100px,35vw,224px)]'>
-            <img className='h-fit w-fit object-cover object-center' src="/logomain.png" alt="" />
+          <Link to="/" className='h-auto w-[clamp(100px,35vw,224px)]'>
+            <img className='h-full w-full object-cover object-center' src="/logomain.png" alt="" />
           </Link>
 
           {/* Desktop Menu - Hidden on mobile */}

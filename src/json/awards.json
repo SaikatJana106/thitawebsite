@@ -1,37 +1,20 @@
 [
     {
         "title": "AWARD",
-        "year": "2020",
+        "year": "2025",
         "subDescription": "This is the detailed sub description of the award received in 2020.",
-        "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum,",
-        "image":"/award1.jpg"
+        "description": "Best Project award - AMPLIFY",
+        "image":"/award2.jpg",
+        "imagesec":"/award1.jpg"
+
     },
     {
         "title": "AWARD",
-        "year": "2020",
+        "year": "2025",
         "subDescription": "This is the detailed sub description of the award received in 2021.",
-        "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum,",
-        "image":"/award2.jpg"
-    },
-    {
-        "title": "AWARD",
-        "year": "2020",
-        "subDescription": "This is the detailed sub description of the award received in 2022.",
-        "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum,",
-        "image":"/award3.jpg"
-    },
-    {
-        "title": "AWARD",
-        "year": "2020",
-        "subDescription": "This is the detailed sub description of the award received in 2023.",
-        "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum,",
-        "image":"/award4.jpg"
-    },
-    {
-        "title": "AWARD",
-        "year": "2020",
-        "subDescription": "This is the detailed sub description of the award received in 2024.",
-        "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum,",
-        "image":"/career3.jpg"
+        "description": "MBZUAI Internship and Opportunities Fair",
+        "image":"/career3.jpg",
+        "imagesec":"/intern_a.jpg"
+
     }
 ]
