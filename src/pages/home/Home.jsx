@@ -283,12 +283,12 @@ const Home = () => {
         <div className=" ">
 
             {/* home start  */}
-            <section className="text-white relative z-10  w-[75%]  mx-auto h-[85vh] flex flex-col justify-center">
+            <section className="text-white relative z-10  w-[75%]  mx-auto h-[90vh] flex flex-col justify-center mt-0">
                 {/* Main Heading */}
                 <h1
                     ref={textRef}
                     onMouseMove={handleMouseMove}
-                    className="text-[clamp(1.5rem,5vw,50rem)] font-semibold text-[#FFFFFF] leading-tight hover-gradient-text cursor-default exo"
+                    className="text-[clamp(2rem,6vw,50rem)] font-semibold text-[#FFFFFF] leading-tight hover-gradient-text cursor-default exo"
                     data-text={`The \nTechnology \nAdvisors`}
                     style={{ fontFamily: "Ethnocentric" }}
 
@@ -328,7 +328,7 @@ const Home = () => {
 
             {/* about start */}
             <section className='max-w-[90%] md:max-w-[80%] mx-auto h-[70dvh] mt-[30px]  relative z-10'>
-                <h2 className="text-[clamp(3rem,5vw,50rem)]  text-[#B555D3] exo"
+                <h2 className="text-3xl sm:text-4xl md:text-5xl  text-[#B555D3] exo"
                 style={{ fontFamily: "Ethnocentric" }}
                 >
                     About <span className="font-bold">Us</span>
@@ -385,7 +385,7 @@ const Home = () => {
                             <div className="w-full h-px bg-gray-500 mb-3 relative" data-aos="fade-right">
                                 <div className="w-1 h-1 bg-white rounded-full absolute right-0 top-1/2 transform -translate-y-1/2"></div>
                             </div>
-                            <p className="text-[clamp(1rem,1vw,50rem)] text-gray-300 leading-relaxed text-left" data-aos="fade-up" data-aos-delay="700">
+                            <p className="text-[clamp(1rem,1vw,50rem)] text-gray-300 leading-relaxed text-left roboto-semi" data-aos="fade-up" data-aos-delay="700">
                                 {/* At Theta, we believe that AI should be accessible, adaptable, and built around your vision. Whether you're a growing startup or a large enterprise, we create custom solutions that solve real problems — faster, smarter, and more securely. */}
                                 At Theta, we champion accessible, flexible AI tailored to your vision. Whether you're a scaling startup or a Fortune 500 company, we deliver bespoke solutions that address real business challenges—more quickly, intelligently, and securely.
                             </p>
@@ -482,7 +482,7 @@ const Home = () => {
             >
                 <div className="sticky top-0 h-screen overflow-hidden flex flex-col justify-center items-center">
                     <div className='relative h-[100vh] flex justify-center items-center w-full'>
-                        <h1 className="text-[clamp(3rem,18vw,50rem)] font-black z-0 pointer-events-none select-none flex gap-1 md:gap-2">
+                        <h1 className="text-[clamp(3rem,13vw,50rem)] font-black z-0 pointer-events-none select-none flex gap-1 md:gap-2">
                             {"SERVICES".split("").map((char, index) => {
                                 const delay = index * 0.05;
                                 let introTransform = "translateY(100vh)";
@@ -527,7 +527,8 @@ const Home = () => {
 
                                             display: 'flex',
                                             justifyContent: 'center',
-                                            alignItems: 'center'
+                                            alignItems: 'center',
+                                            fontFamily: "Ethnocentric"
                                         }}
                                     >
                                         {char}
@@ -569,11 +570,11 @@ const Home = () => {
             {/* why Theta start #B555D3*/}
             <section className='relative z-10 text-white px-4 md:px-10 py-20'>
                 <div className='max-w-[90%] md:max-w-[85%] mx-auto'>
-                    <h1 className="text-[clamp(3rem,5vw,4rem)] font-light text-[#B555D3]" style={{ fontFamily: "Ethnocentric" }} data-aos="zoom-out">
-                        Why Choose <br />
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#B555D3]" style={{ fontFamily: "Ethnocentric" }} data-aos="zoom-out">
+                        How Do We  Define<br />
                         <span className="font-bold" 
-                        style={{ fontFamily: "Ethnocentric" }}>Theta</span>
-                        <span className='text-[#B555D3]' style={{ fontFamily: "Ethnocentric" }}> ?</span>
+                        style={{ fontFamily: "Ethnocentric", color:"white" }}>  Our Goals</span>
+                        <span className='text-white' style={{ fontFamily: "Ethnocentric" }}> ?</span>
                     </h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-8 mt-10 w-fit">
                         <div className="text-sm md:text-base leading-relaxed">
@@ -634,8 +635,8 @@ const Home = () => {
             >
                 <div className="sticky top-[5%] h-screen flex flex-col justify-end overflow-hidden">
                     <div className="relative h-[629px]">
-                        <h1 className="text-[clamp(3rem,5vw,50rem)] text-[#B555D3] text-left max-w-[85%] mx-auto exo">
-                            Our <span className="font-bold exo">Partners</span>
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#B555D3] text-left max-w-[85%] mx-auto exo" style={{fontFamily: "Ethnocentric"}}>
+                            Our <span className="font-bold exo" style={{fontFamily: "Ethnocentric"}}>Partners</span>
                         </h1>
                         <div className=" inset-0">
 

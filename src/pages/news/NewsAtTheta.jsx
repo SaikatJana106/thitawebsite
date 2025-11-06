@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import blogData from "../../json/blog.json";
+import { Link } from 'react-router-dom';
 const NewsAtTheta = () => {
     // Refs for sliders
     const popularRef = useRef(null);
@@ -62,7 +63,7 @@ const NewsAtTheta = () => {
             <section className=" text-white px-6 md:px-16 py-16 font-sans relative overflow-hidden">
                 <div className="w-[85%] mx-auto h-fit">
                     {/* Header */}
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#B555D3] mb-4 exo"
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#B555D3] mb-4 exo"
                     style={{ fontFamily: "Ethnocentric" }}
                     >
                         Popular Now
@@ -99,9 +100,9 @@ const NewsAtTheta = () => {
                                     >
                                         {blog.title}
                                     </h3>
-                                    <p className="text-gray-400 text-sm mb-2 max-w-64">{blog.description}</p>
+                                    <p className="text-gray-400 text-sm mb-2 max-w-64 line-clamp-2">{blog.description}</p>
                                     <div className='flex justify-start w-full'>
-                                        <button className='opacity-0 group-hover:opacity-[100%] text-[#6927DA]'>readmore</button>
+                                        <Link to={`/blog/${blog.id}`} className='opacity-0 group-hover:opacity-[100%] text-[#6927DA]'>readmore</Link>
                                     </div>
                                 </div>
                             ))}
@@ -119,10 +120,10 @@ const NewsAtTheta = () => {
             <section className=" text-white px-6 md:px-16 py-16 font-sans relative overflow-hidden">
                 <div className="w-[85%] mx-auto h-fit">
                     {/* Header */}
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#B555D3] mb-4 exo"
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#B555D3] mb-4 exo"
                     style={{ fontFamily: "Ethnocentric" }}
                     >
-                        Resent Articles
+                        Recent Articles
                     </h2>
                     <p className="text-sm text-gray-300 mb-12 max-w-2xl roboto-semi">
                         Here's what we've been up to recently
@@ -139,7 +140,7 @@ const NewsAtTheta = () => {
 
                         <div
                             ref={recentRef}
-                            className="flex overflow-x-auto gap-4 md:gap-8 pb-4 scrollbar-hide justify-between items-center"
+                            className="flex overflow-x-auto gap-10 md:gap-20 pb-4 scrollbar-hide justify-start items-center"
                         >
                             {blogData.popular.map((blog, index) => (
                                 <div key={index} className='flex flex-col items-start justify-between w-fit group'>
@@ -156,9 +157,9 @@ const NewsAtTheta = () => {
                                     >
                                         {blog.title}
                                     </h3>
-                                    <p className="text-gray-400 text-sm mb-2 max-w-64">{blog.description}</p>
+                                    <p className="text-gray-400 text-sm mb-2 max-w-64 line-clamp-2">{blog.description}</p>
                                     <div className='flex justify-start w-full'>
-                                        <button className='opacity-0 group-hover:opacity-[100%] text-[#6927DA]'>readmore</button>
+                                        <Link to={`/blog/${blog.id}`} className='opacity-0 group-hover:opacity-[100%] text-[#6927DA]'>readmore</Link>
                                     </div>
                                 </div>
                             ))}
@@ -176,7 +177,7 @@ const NewsAtTheta = () => {
             <section className=" text-white px-6 md:px-16 py-16 font-sans relative overflow-hidden">
                 <div className="w-[85%] mx-auto h-fit">
                     {/* Header */}
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#B555D3] mb-4 exo"
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#B555D3] mb-4 exo"
                     style={{ fontFamily: "Ethnocentric" }}
                     >
                         Case Studies
@@ -216,7 +217,7 @@ const NewsAtTheta = () => {
                 </div>
             </section>
             <section className='min-h-screen w-[85%] mx-auto'>
-                <h1 className='text-[#B555D3] text-6xl exo'
+                <h1 className='text-[#B555D3] text-2xl sm:text-3xl md:text-4xl exo'
                 style={{ fontFamily: "Ethnocentric" }}
                 >All Articals</h1>
                 <p className='text-white roboto-semi'>We share common trands, opinions, short and long story from the team behimd company</p>
@@ -247,9 +248,9 @@ const NewsAtTheta = () => {
                                     >
                                         {blog.title}
                                     </h3>
-                                    <p className="text-gray-400 text-sm mb-2 max-w-64">{blog.description}</p>
+                                    <p className="text-gray-400 text-sm mb-2 max-w-64 line-clamp-2">{blog.description}</p>
                                     <div className='flex justify-start w-full'>
-                                        <button className='opacity-0 group-hover:opacity-[100%] text-[#6927DA]'>readmore</button>
+                                        <Link to={`/blog/${blog.id}`} className='opacity-0 group-hover:opacity-[100%] text-[#6927DA]'>readmore</Link>
                                     </div>
                                 </div>
                             ))}
@@ -269,7 +270,7 @@ const NewsAtTheta = () => {
                         >
                             <FaChevronLeft size={24} />
                         </button>
-
+{/* 
                         <div
                             ref={allArticlesRef2}
                             className='flex overflow-x-auto  justify-around gap-4 md:gap-8 items-center'
@@ -301,7 +302,7 @@ const NewsAtTheta = () => {
                             >
                                 <FaChevronRight size={24} />
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>

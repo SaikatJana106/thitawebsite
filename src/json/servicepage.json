@@ -30,7 +30,67 @@
     "image": "/cyber_security.png"
   },
   {
-    "title": "IT Consulting and Auditing",
+    "title": "IT Consulting",
+    "details": [
+      "Strategic Planning",
+      "Strategic Planning",
+      "Datacentre Consultation and improvement planning",
+      "IT Service Improvement Planning",
+      "IT Service Cost Optimisation",
+      "Pre-audit assessments and readiness planning"
+    ],
+    "image": "/consulting_and_auditing.png"
+  },
+  {
+    "title": "ISO Auditing",
+    "details": [
+      "Strategic Planning",
+      "Strategic Planning",
+      "Datacentre Consultation and improvement planning",
+      "IT Service Improvement Planning",
+      "IT Service Cost Optimisation",
+      "Pre-audit assessments and readiness planning"
+    ],
+    "image": "/consulting_and_auditing.png"
+  },
+  {
+    "title": "Project Quality Management",
+    "details": [
+      "Strategic Planning",
+      "Strategic Planning",
+      "Datacentre Consultation and improvement planning",
+      "IT Service Improvement Planning",
+      "IT Service Cost Optimisation",
+      "Pre-audit assessments and readiness planning"
+    ],
+    "image": "/consulting_and_auditing.png"
+  },
+  {
+    "title": "Data Centre Consulting",
+    "details": [
+      "Strategic Planning",
+      "Strategic Planning",
+      "Datacentre Consultation and improvement planning",
+      "IT Service Improvement Planning",
+      "IT Service Cost Optimisation",
+      "Pre-audit assessments and readiness planning"
+    ],
+    "image": "/consulting_and_auditing.png"
+  },
+    {
+    "title": "IT Infrastructure",
+    "details": [
+      "Strategic Planning",
+      "Strategic Planning",
+      "Datacentre Consultation and improvement planning",
+      "IT Service Improvement Planning",
+      "IT Service Cost Optimisation",
+      "Pre-audit assessments and readiness planning"
+    ],
+    "image": "/consulting_and_auditing.png"
+  },
+    {
+    "title": "Cloud Services",
     "details": [
       "Strategic Planning",
       "Strategic Planning",
@@ -41,4 +101,5 @@
     ],
     "image": "/consulting_and_auditing.png"
   }
+  
 ]

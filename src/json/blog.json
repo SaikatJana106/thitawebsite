@@ -6,25 +6,39 @@
     },
     "popular": [
         {
+            "id": 1,
             "title": "Blog Title",
-            "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum.",
-            "image": "/1 (10).jpg",
-            "link": "#",
+            "description": "Advancing AI Excellence at Theta with Strategic Partner AInBox—Our Journey Toward ISO 42001:2023 Compliance .",
+            "image": "/blog1.png",
+            "content": "<p>At Theta, we are committed to responsible and effective AI adoption. As part of our ongoing dedication to innovation and compliance, our team recently participated in an in-depth AI awareness session led by Fathi M. AlWosaibi, focused on our AI awareness and Theta’s alignment with our practices and ISO 42001:2023 standards.</p> <br/> <p>AInBox, our strategic partner, plays a vital role in our AI journey, assisting us in delivering advanced solutions that are both ethical and impactful.</p> <br/> <p><b>Why We Invested in AI Training  </b>Our goal is to ensure every AI initiative at Theta, including those with AInBox, is strategically aligned with business objectives and national priorities. The training highlighted robust governance, risk management, and compliance—essential for sustainable AI deployment and ISO 42001:2023 certification.</p> <br/> <h3> <b> Key Takeaways from the Session </b> </h3> <br/> <ul><li><b>Strategic Alignment:</b> AI must support organisational goals and compliance requirements.</li> <br/> <li><b>AI Maturity Roadmap:</b> We explored stages of AI maturity and tailored approaches for each phase.</li> <br/> <li><b>Practical Applications:</b> Examples included using AInBox for sentiment analysis in tourism and AI-powered resume ranking in HR, demonstrating real business value.</li> <br/> <li><b>Governance and Compliance:</b> Clear policies and adherence to ISO 42001:2023 are essential for protecting users and business interests.</li> <br/> </ul><p><b>Looking Ahead:</b> This training is just the beginning. We plan to share further insights from the second day of the session in a follow-up blog, continuing our commitment to learning and improvement.</p><p>At Theta, together with our strategic partner <b>AInBox</b>, we are dedicated to delivering secure, ethical, and innovative AI solutions.</p>",
+            "tags": [
+                "AI",
+                "AInBox",
+                "Theta",
+                "ISO42001",
+                "Compliance",
+                "Innovation"
+            ],
             "readMore": false
         },
         {
+            "id": 2,
             "title": "Blog Title",
-            "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum.",
-            "image": "/1 (9).jpg",
+            "description": "Theta’s second AI strategy training day with AInBox and Fathi M. AlWosaibi focused on building the technical and organisational foundations for sustainable, compliant AI innovation.",
+            "image": "/blog2.png",
             "link": "#",
+            "content": "<p>At Theta, our journey toward responsible AI adoption continues to gain momentum. Following our initial awareness session, Day 2 of our AI strategy training with <b>Fathi M. AlWosaibi</b> and our partner <b>AInBox</b> delved deeper into the practical foundations required for <b>ISO 42001:2023</b> compliance and sustainable AI innovation.</p> <br/> <h3> <b> Key Insights from Day 2 </b> </h3> </br> <ul><li><b>Data Architecture & Quality:</b> We learned that high-quality, well-structured data is the fuel for effective AI. The session highlighted the importance of data consistency, handling unstructured data, and preparing metadata to ensure AI models deliver accurate, unbiased results. Real-world examples included addressing data inconsistencies across systems and ensuring compliance with personal data protection laws.</li> </br> <li><b>IT Infrastructure & Scalability:</b> Robust infrastructure is essential for AI performance and security. The training covered capacity planning, edge computing, and the need for resource-intensive hardware (like GPUs) to support real-time AI applications. We discussed the importance of guardrails to protect AI models from adversarial attacks and data poisoning.</li>  </br> <li><b>Procurement & Open Source Policies:</b> With the rapid emergence of new AI tools, clear procurement policies are critical. The session emphasised evaluating open-source solutions for security and administrative overhead, ensuring only vetted technologies are integrated into our ecosystem.</li> </br> <li><b>Governance, Risk, and Compliance (GRC):</b> Embedding GRC into every stage of AI development is non-negotiable. We explored how to operationalise ISO 42001:2023 requirements, from data privacy to risk mitigation, and the need for continuous monitoring and clear accountability.</li><li><b>Human Capital & Organisational Structure:</b> Successful AI adoption requires a cross-functional team with both business acumen and technical expertise. The training outlined the need for new roles—such as AI leaders with strategic vision—and ongoing training to keep pace with rapid industry changes.</li> </br> <li><b>Practical Demonstrations:</b> We saw how <b>AInBox’s</b> enterprise platform enables secure, role-based access to AI tools, supports both structured and unstructured data, and automates workflows (e.g., payroll analytics, HR chatbots, and voice agents). These capabilities directly support our compliance and innovation goals.</li> </br> </ul><h3>Our Path Forward</h3> <br/> <p>Day 2 reinforced that achieving AI excellence is a holistic effort—combining technology, policy, and people. With <b>AInBox</b> as our strategic partner, <b>Theta</b> is well-positioned to deliver secure, ethical, and innovative AI solutions that meet  <b> <br/> <br/> ISO 42001:2023</b> standards and drive real business value.</p><p><b>Stay tuned</b> for more updates as we continue to advance our AI journey.</p>",
+            "tags": [
+                "AI",
+                "AInBox",
+                "Theta",
+                "ISO42001",
+                "Compliance",
+                "Strategy",
+                "Governance",
+                "Innovation"
+            ],
             "readMore": false
-        },
-        {
-            "title": "Blog Title",
-            "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum.",
-            "image": "/1 (9).jpg",
-            "link": "#",
-            "readMore": true
         }
     ],
     "caseStudies": [
@@ -37,19 +51,41 @@
     ],
     "articales": [
         {
+            "id": 1,
             "title": "Blog Title",
-            "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum.",
-            "image": "/1 (7).jpg",
-            "link": "#",
+            "description": "Advancing AI Excellence at Theta with Strategic Partner AInBox—Our Journey Toward ISO 42001:2023 Compliance .",
+            "image": "/blog1.png",
+            "content": "<p>At Theta, we are committed to responsible and effective AI adoption. As part of our ongoing dedication to innovation and compliance, our team recently participated in an in-depth AI awareness session led by Fathi M. AlWosaibi, focused on our AI awareness and Theta’s alignment with our practices and ISO 42001:2023 standards.</p> <br/> <p>AInBox, our strategic partner, plays a vital role in our AI journey, assisting us in delivering advanced solutions that are both ethical and impactful.</p> <br/> <p><b>Why We Invested in AI Training  </b>Our goal is to ensure every AI initiative at Theta, including those with AInBox, is strategically aligned with business objectives and national priorities. The training highlighted robust governance, risk management, and compliance—essential for sustainable AI deployment and ISO 42001:2023 certification.</p> <br/> <h3> <b> Key Takeaways from the Session </b> </h3> <br/> <ul><li><b>Strategic Alignment:</b> AI must support organisational goals and compliance requirements.</li> <br/> <li><b>AI Maturity Roadmap:</b> We explored stages of AI maturity and tailored approaches for each phase.</li> <br/> <li><b>Practical Applications:</b> Examples included using AInBox for sentiment analysis in tourism and AI-powered resume ranking in HR, demonstrating real business value.</li> <br/> <li><b>Governance and Compliance:</b> Clear policies and adherence to ISO 42001:2023 are essential for protecting users and business interests.</li> <br/> </ul><p><b>Looking Ahead:</b> This training is just the beginning. We plan to share further insights from the second day of the session in a follow-up blog, continuing our commitment to learning and improvement.</p><p>At Theta, together with our strategic partner <b>AInBox</b>, we are dedicated to delivering secure, ethical, and innovative AI solutions.</p>",
+            "tags": [
+                "AI",
+                "AInBox",
+                "Theta",
+                "ISO42001",
+                "Compliance",
+                "Innovation"
+            ],
             "readMore": false
         },
         {
+            "id": 2,
             "title": "Blog Title",
-            "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum.",
-            "image": "/1 (7).jpg",
+            "description": "Theta’s second AI strategy training day with AInBox and Fathi M. AlWosaibi focused on building the technical and organisational foundations for sustainable, compliant AI innovation.",
+            "image": "/blog2.png",
             "link": "#",
+            "content": "<p>At <b>Theta</b>, our journey toward responsible AI adoption continues to gain momentum. Following our initial awareness session, <b>Day 2</b> of our AI strategy training with <b>Fathi M. AlWosaibi</b> and our partner <b>AInBox</b> delved deeper into the practical foundations required for <b>ISO 42001:2023</b> compliance and sustainable AI innovation.</p><h3>Key Insights from Day 2</h3><ul><li><b>Data Architecture & Quality:</b> We learned that high-quality, well-structured data is the fuel for effective AI. The session highlighted the importance of data consistency, handling unstructured data, and preparing metadata to ensure AI models deliver accurate, unbiased results. Real-world examples included addressing data inconsistencies across systems and ensuring compliance with personal data protection laws.</li><li><b>IT Infrastructure & Scalability:</b> Robust infrastructure is essential for AI performance and security. The training covered capacity planning, edge computing, and the need for resource-intensive hardware (like GPUs) to support real-time AI applications. We discussed the importance of guardrails to protect AI models from adversarial attacks and data poisoning.</li><li><b>Procurement & Open Source Policies:</b> With the rapid emergence of new AI tools, clear procurement policies are critical. The session emphasised evaluating open-source solutions for security and administrative overhead, ensuring only vetted technologies are integrated into our ecosystem.</li><li><b>Governance, Risk, and Compliance (GRC):</b> Embedding GRC into every stage of AI development is non-negotiable. We explored how to operationalise ISO 42001:2023 requirements, from data privacy to risk mitigation, and the need for continuous monitoring and clear accountability.</li><li><b>Human Capital & Organisational Structure:</b> Successful AI adoption requires a cross-functional team with both business acumen and technical expertise. The training outlined the need for new roles—such as AI leaders with strategic vision—and ongoing training to keep pace with rapid industry changes.</li><li><b>Practical Demonstrations:</b> We saw how <b>AInBox’s</b> enterprise platform enables secure, role-based access to AI tools, supports both structured and unstructured data, and automates workflows (e.g., payroll analytics, HR chatbots, and voice agents). These capabilities directly support our compliance and innovation goals.</li></ul><h3> <b> Our Path Forward </b> </h3><p>Day 2 reinforced that achieving AI excellence is a holistic effort—combining technology, policy, and people. With <b>AInBox</b> as our strategic partner, <b>Theta</b> is well-positioned to deliver secure, ethical, and innovative AI solutions that meet <b>ISO 42001:2023</b> standards and drive real business value.</p><p><b>Stay tuned</b> for more updates as we continue to advance our AI journey.</p>",
+            "tags": [
+                "AI",
+                "AInBox",
+                "Theta",
+                "ISO42001",
+                "Compliance",
+                "Strategy",
+                "Governance",
+                "Innovation"
+            ],
             "readMore": false
         },
+
         {
             "title": "Blog Title",
             "description": "Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum.",

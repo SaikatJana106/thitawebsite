@@ -13,7 +13,7 @@ const ContactUs = () => {
                 <div className='max-w-[85%] mx-auto'>
 
 
-                    <h2 className="text-[#B555D3] text-[clamp(2.5rem,4vw,50rem)] font-bold mb-10 tracking-widest exo" 
+                    <h2 className="text-[#B555D3] text-2xl sm:text-3xl md:text-4xl font-bold mb-10 tracking-widest exo" 
                     style={{ fontFamily: "Ethnocentric" }}
                     >
                         CONTACT US
@@ -68,10 +68,11 @@ const ContactUs = () => {
             </section>
             <section className=" text-white py-16 px-6 md:px-24 min-h-screen z-10">
                 <div className='w-[85%] max-lg:w-[98%] '>
-                    <h2 className="text-[#B555D3]  font-bold mb-12 tracking-widest leading-snug uppercase exo text-[clamp(2rem,3vw,50rem)]" 
+                    <h2 className="text-[#B555D3]  font-bold mb-12 tracking-widest leading-snug uppercase exo text-2xl sm:text-3xl md:text-4xl" 
                     style={{ fontFamily: "Ethnocentric" }}
                     >
-                        Get In Touch <br /> With Our Team
+                        Get In Touch <br /> 
+                        <span className='text-white'>With Our Team</span>
                     </h2>
 
                     <form className="bg-[#14121c] p-8 rounded-md shadow-md border border-gray-700 space-y-6 w-1/2 max-xl:w-3/4 max-lg:w-5/6 max-md:w-full ">

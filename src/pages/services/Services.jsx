@@ -119,12 +119,12 @@ const Services = () => {
                 <div className='w-[85%]'>
                     <div className='flex justify-start flex-col items-start'>
                         <h1
-                            className={`exo text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-widest text-[#B555D3]  transition-all duration-500 ease-in-out
+                            className={`exo text-[clamp(1.5rem,2.2vw,4rem)] font-bold uppercase tracking-widest text-[#B555D3]  transition-all duration-500 ease-in-out
           ${isAnimatingOut ? "-translate-y-5 opacity-0" : ""}
           ${isAnimatingIn ? "translate-y-5 opacity-0" : ""}
           ${!isAnimatingOut && !isAnimatingIn ? "translate-y-0 opacity-100" : ""}
         `}
-                        style={{ fontFamily: "Ethnocentric" }}
+                            style={{ fontFamily: "Ethnocentric" }}
                         >
                             {texts[index]}
                         </h1>
@@ -149,18 +149,18 @@ const Services = () => {
                             </div>
 
                             <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-wide text-white mt-[2%] exo'
-                            style={{ fontFamily: "Ethnocentric" }}
+                                style={{ fontFamily: "Ethnocentric" }}
                             >Services</h1>
                         </div>
                     </div>
                     <div className='flex justify-end flex-col items-end'>
                         <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-wide text-white exo"
-                        style={{ fontFamily: "Ethnocentric" }}
+                            style={{ fontFamily: "Ethnocentric" }}
                         >
                             That Empowers
                         </h3>
                         <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-widest text-[#B555D3] mt-[2%] exo"
-                        style={{ fontFamily: "Ethnocentric" }}
+                            style={{ fontFamily: "Ethnocentric" }}
                         >
                             Your Business
                         </h3>
@@ -178,7 +178,7 @@ const Services = () => {
                 <div className="w-[85%] mx-auto">
                     {/* Heading */}
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-wide text-white mb-12 leading-tight exo"
-                    style={{ fontFamily: "Ethnocentric" }}
+                        style={{ fontFamily: "Ethnocentric" }}
                     >
                         ALL YOUR <br />
                         <span className="text-[#B555D3]">TECHNOLOGICAL NEEDS</span> <br />
@@ -231,10 +231,11 @@ const Services = () => {
 
                         {/* Left text section */}
                         <div className="text-left max-w-xl flex flex-col justify-around h-full">
-                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-wide mb-4 exo"
-                            style={{ fontFamily: "Ethnocentric" }}
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-wide mb-4 exo text-[#B555D3]"
+                                style={{ fontFamily: "Ethnocentric" }}
                             >
-                                GET A FREE <br /> CONSULTATION
+                                GET A FREE <br /> 
+                                <span className='text-white'>CONSULTATION</span>
                             </h2>
                             <p className="text-gray-300 text-base md:text-lg roboto-semi">
                                 Speak with our experts to discover the best solutions <br />

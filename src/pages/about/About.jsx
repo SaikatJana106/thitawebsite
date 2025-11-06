@@ -303,10 +303,11 @@ const About = () => {
       {/* Hero Section */}
       <div className="min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-3xl">
-          <h1 className="text-[clamp(1.5rem,3vw+3px,50rem)] leading-tight font-bold text-[#B555D3] tracking-wide uppercase mb-6 exo"
-          style={{ fontFamily: "Ethnocentric" }}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl leading-tight font-bold text-[#B555D3] tracking-wide uppercase mb-6 exo"
+            style={{ fontFamily: "Ethnocentric" }}
           >
-            Know More About<br />Our Journey
+            Know More About<br />
+            <span className="text-white">Our Journey</span>
           </h1>
           <h2 className="text-xl md:text-2xl mb-4">About Theta</h2>
 
@@ -336,10 +337,11 @@ const About = () => {
         <section className="py-12 md:py-20 relative z-10">
           <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div>
-              <h1 className="text-[clamp(2rem,3vw+5px,50rem)] font-bold text-[#B555D3] uppercase tracking-wide mb-6 exo max-md:text-center"
-               style={{ fontFamily: "Ethnocentric" }}
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#B555D3] uppercase tracking-wide mb-6 exo max-md:text-center"
+                style={{ fontFamily: "Ethnocentric" }}
               >
-                Behind the<br />Success
+                Behind the<br />
+                <span className="text-white">Success</span>
               </h1>
               <div
                 className="w-1/2 h-px bg-gray-500 mb-3 relative mt-6 md:mt-10"
@@ -351,9 +353,9 @@ const About = () => {
                 Founders and Expertise
               </h2>
               <p className="text-gray-300 text-[clamp(1rem,1vw,50rem)] leading-relaxed">
-                <span className="font-semibold text-white roboto-semi">Founded by</span>{" "}industry veterans with over 75 years of collective experience across Asia, the GCC, and Europe, 
+                <span className="font-semibold text-white roboto-semi">Founded by</span>{" "}industry veterans with over 75 years of collective experience across Asia, the GCC, and Europe,
 
-               Theta brings unparalleled local market understanding and global expertise to every project.
+                Theta brings unparalleled local market understanding and global expertise to every project.
               </p>
             </div>
             <div
@@ -398,10 +400,11 @@ const About = () => {
         <div className="max-w-[90%] md:max-w-[80%] mx-auto">
           <h2
             ref={goalsHeadingRef}
-            className="text-[clamp(1.5rem,4vw,50rem)] font-bold text-[#B555D3] uppercase tracking-wide text-left mb-8 md:mb-16 exo"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#B555D3] uppercase tracking-wide text-left mb-8 md:mb-16 exo"
             style={{ fontFamily: "Ethnocentric" }}
           >
-            HOW WE DEFINE OUR <br />GOALS AT THETA
+            HOW WE DEFINE OUR <br />
+            <span className="text-white">GOALS AT THETA</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
@@ -480,11 +483,15 @@ const About = () => {
 
       {/* Process Section */}
       <div className="h-[500vh] ">
+
         <div
           ref={containerRef}
-          className="sticky top-0 h-screen flex items-center justify-center overflow-x-auto"
+          className="sticky top-0 h-screen flex items-center flex-col justify-center overflow-x-auto"
         >
-          <div className="flex w-full h-[70vh] px-4 md:px-6">
+          <h1 className="text-center font-bold text-[#B555D3] text-3xl sm:text-4xl md:text-5xl "
+            style={{ fontFamily: "Ethnocentric" }}
+          >Road Map</h1>
+          <div className="flex w-full h-[65vh] px-4 md:px-6">
             {sections.map((sec, i) => {
               const revealPoint = (i + 1) / sections.length;
               const widthPercentage =
@@ -531,7 +538,7 @@ const About = () => {
       {/* Certifications Section */}
       <section className=" py-12">
         <div className="container mx-auto px-4">
-          <h2 className="font-bold text-[#B555D3] text-center mb-8 exo text-[clamp(2rem,4vw,50rem)]" style={{ fontFamily: "Ethnocentric" }}>Theta Certifications</h2>
+          <h2 className="font-bold text-[#B555D3] text-center mb-8 exo text-3xl sm:text-4xl md:text-5xl" style={{ fontFamily: "Ethnocentric" }}>Theta Certifications</h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {certificates.map((cert, index) => (
               <div
@@ -545,7 +552,7 @@ const About = () => {
                   <img
                     src={cert.image}
                     alt={cert.title}
-                    className="rounded-t-lg w-full " 
+                    className="rounded-t-lg w-full "
                   />
                 </div>
                 <div className="p-4 bg-[#262244]">

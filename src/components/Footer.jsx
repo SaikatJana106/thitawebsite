@@ -97,21 +97,21 @@ const Footer = () => {
                         <div className="flex flex-wrap-reverse items-center gap-3 md:gap-8 w-full md:w-1/2 justify-center">
                             <small className="text-center sm:text-left">&copy; 2025 Theta. All rights reserved.</small>
                             <div className="flex gap-4 sm:gap-6 flex-nowrap justify-center">
-                                <a href="#" className="hover:text-white">Privacy Policy</a>
-                                <a href="#" className="hover:text-white">Terms of Service</a>
-                                <a href="#" className="hover:text-white">Cookie Policy</a>
+                                <a href="#" className="hover:text-[#6927DA]">Privacy Policy</a>
+                                <a href="#" className="hover:text-[#6927DA]">Terms of Service</a>
+                                <a href="#" className="hover:text-[#6927DA]">Cookie Policy</a>
                             </div>
                         </div>
 
                         <div className="flex gap-4 flex-wrap justify-center">
-                            <a href="#" className="hover:text-white">LinkedIn</a>
-                            <a href="#" className="hover:text-white">Facebook</a>
-                            <a href="#" className="hover:text-white">Instagram</a>
+                            <a href="#" className="hover:text-[#6927DA]">LinkedIn</a>
+                            <a href="#" className="hover:text-[#6927DA]">Facebook</a>
+                            <a href="#" className="hover:text-[#6927DA]">Instagram</a>
                         </div>
                     </div>
                 </div>
             </footer> */}
-            <footer className="bg-white/5 text-gray-300 p-6">
+            <footer className="bg-white/5 text-gray-300 p-6 relative z-10">
                 <div className="w-[90%] mx-auto flex justify-between items-start flex-wrap gap-10">
                     {/* ---------- Left section ---------- */}
                     <div>
@@ -174,15 +174,15 @@ const Footer = () => {
                             Company
                         </h3>
                         <ul className="space-y-2 text-gray-300">
-                            <li><Link to="/about" className="hover:text-white">About Us</Link></li>
-                            <li><Link to="/career" className="hover:text-white">Careers</Link></li>
-                            <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
-                            <li><Link to="/contact" className="hover:text-white">Meet the team</Link></li>
+                            <li><Link to="/about" className="hover:text-[#6927DA]">About Us</Link></li>
+                            <li><Link to="/career" className="hover:text-[#6927DA]">Careers</Link></li>
+                            <li><Link to="/contact" className="hover:text-[#6927DA]">Contact</Link></li>
+                            <li><Link to="/contact" className="hover:text-[#6927DA]">Meet the team</Link></li>
                             <Link
                                 to="/whytheta"
                                 className="hover:text-[#6927DA] text-[clamp(0.80rem,1vw,1rem)]"
                                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                            >WHY CHOOSE THETA</Link>
+                            >Why Choose Theta</Link>
                         </ul>
                     </div>
 
@@ -196,16 +196,16 @@ const Footer = () => {
                     <div className="flex flex-wrap-reverse items-center justify-start gap-3 md:gap-8 w-full md:w-1/2">
                         <small className="text-center sm:text-left">&copy; 2025 Theta. All rights reserved.</small>
                         <div className="flex gap-4 sm:gap-6 flex-nowrap justify-center">
-                            <a href="#" className="hover:text-white">Privacy Policy</a>
-                            <a href="#" className="hover:text-white">Terms of Service</a>
-                            <a href="#" className="hover:text-white">Cookie Policy</a>
+                            <a href="#" className="hover:text-[#6927DA]">Privacy Policy</a>
+                            <a href="#" className="hover:text-[#6927DA]">Terms of Service</a>
+                            <a href="#" className="hover:text-[#6927DA]">Cookie Policy</a>
                         </div>
                     </div>
 
                     <div className="flex gap-4 flex-wrap justify-center">
-                        <a href="#" className="hover:text-white">LinkedIn</a>
-                        <a href="#" className="hover:text-white">Facebook</a>
-                        <a href="#" className="hover:text-white">Instagram</a>
+                        <a href="#" className="hover:text-[#6927DA]">LinkedIn</a>
+                        {/* <a href="#" className="hover:text-[#6927DA]">Facebook</a>
+                        <a href="#" className="hover:text-[#6927DA]">Instagram</a> */}
                     </div>
                 </div>
             </footer>

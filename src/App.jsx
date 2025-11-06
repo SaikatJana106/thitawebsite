@@ -13,6 +13,7 @@ import Awards from './pages/awards/Awards';
 import WhyTheta from './pages/whytheta/WhyTheta';
 import About from './pages/about/About';
 import TopGoButton from './pages/topgobutton/TopGoButton';
+import BlogDetails from './pages/BlogDetails';
 function App() {
 
     useEffect(() => {
@@ -43,7 +44,7 @@ function App() {
           <Route path='/award' element={<Awards />} />
           <Route path='/whytheta' element={<WhyTheta />} />
           <Route path='/about' element={<About />} />
-
+          <Route path="/blog/:blogId" element={<BlogDetails/>} />
         </Routes>
 
         <Footer />

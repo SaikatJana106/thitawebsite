@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className="w-[85%] max-[1200px]:w-[98%] mx-auto border-b border-gray-100/10 bg-black/10 sticky top-0 z-50 backdrop-blur-sm py-1"
+        className="w-[85%] max-[1387px]:w-[98%] mx-auto border-b border-gray-100/10 bg-black/10 sticky top-0 z-50 backdrop-blur-sm py-1 max-w-[1400px]"
         style={{
           transform: visible ? 'translateY(0)' : 'translateY(-100%)',
           transition: 'transform 0.5s ease-in-out',
@@ -38,22 +38,22 @@ const Navbar = () => {
 
           {/* Desktop Menu - Hidden on mobile */}
           <div className="hidden min-[1200px]:flex space-x-6 items-center border border-gray-600 rounded-full px-4 py-1 text-sm">
-            <Link to="/"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-white hover:text-[#6927DA] cursor-pointer">Homepage</Link>
+            <Link to="/"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-white hover:text-[#6927DA] cursor-pointer text-xl">Homepage</Link>
             <div className="relative group">
-              <button className="text-white hover:text-[#6927DA] cursor-default">
+              <button className="text-white hover:text-[#6927DA] cursor-default text-xl">
                 Discover Theta
               </button>
               <div className="absolute hidden group-hover:block bg-[#1F2348] rounded shadow-lg min-w-[120px] h-auto">
                 <ul>
-                  <Link  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to={"/about"} className="hover:bg-[#6927DA] text-white px-4 py-2 cursor-pointer hover:opacity-90 flex items-center justify-between whitespace-nowrap">
+                  <Link  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to={"/about"} className="hover:bg-[#6927DA] text-white px-4 py-2 cursor-pointer hover:opacity-90 flex items-center justify-between whitespace-nowrap text-xl">
                     About Us
                     <IoIosArrowForward />
                   </Link>
-                  <li  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:bg-[#6927DA] text-white px-4 py-2 cursor-pointer hover:opacity-90 flex items-center justify-between whitespace-nowrap">
+                  <li  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:bg-[#6927DA] text-white px-4 py-2 cursor-pointer hover:opacity-90 flex items-center justify-between whitespace-nowrap text-xl">
                     Meet The Team
                     <IoIosArrowForward />
                   </li>
-                  <Link  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/whytheta" className="hover:bg-[#6927DA] text-white px-4 py-2 cursor-pointer hover:opacity-90 flex items-center justify-between whitespace-nowrap">
+                  <Link  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/whytheta" className="hover:bg-[#6927DA] text-white px-4 py-2 cursor-pointer hover:opacity-90 flex items-center justify-between whitespace-nowrap text-xl">
                     Why Choose Theta
                     <IoIosArrowForward />
                   </Link>
@@ -61,24 +61,24 @@ const Navbar = () => {
               </div>
             </div>
 
-            <Link  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to={"/services"} className="text-white hover:text-[#6927DA] cursor-pointer">Explore Services</Link>
+            <Link  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to={"/services"} className="text-white hover:text-[#6927DA] cursor-pointer text-xl">Explore Services</Link>
             <Link  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              to="/contact" className="text-white hover:text-[#6927DA] cursor-pointer">Contact Us</Link>
+              to="/contact" className="text-white hover:text-[#6927DA] cursor-pointer text-xl">Contact Us</Link>
             <div className="relative group">
-              <button className="text-white hover:text-[#6927DA] cursor-default">
+              <button className="text-white hover:text-[#6927DA] cursor-default text-xl">
                 Inside Theta
               </button>
               <div className="absolute hidden group-hover:block bg-[#1F2348] rounded shadow-lg min-w-[120px] h-auto">
                 <ul>
-                  <Link  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/news" className="hover:bg-[#6927DA] text-white px-4 py-2 gap-2 cursor-pointer hover:opacity-90 flex items-center justify-between whitespace-nowrap">
+                  <Link  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/news" className="hover:bg-[#6927DA] text-white px-4 py-2 gap-2 cursor-pointer hover:opacity-90 flex items-center justify-between whitespace-nowrap text-xl">
                     News At Theta
                     <IoIosArrowForward />
                   </Link>
-                  <Link  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/career" className="hover:bg-[#6927DA] text-white px-4 py-2 cursor-pointer hover:opacity-90 flex items-center justify-between whitespace-nowrap">
+                  <Link  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/career" className="hover:bg-[#6927DA] text-white px-4 py-2 cursor-pointer hover:opacity-90 flex items-center justify-between whitespace-nowrap text-xl">
                     Careers
                     <IoIosArrowForward />
                   </Link>
-                  <Link  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/award" className="hover:bg-[#6927DA] text-white px-4 py-2 cursor-pointer hover:opacity-90 flex items-center justify-between whitespace-nowrap">
+                  <Link  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/award" className="hover:bg-[#6927DA] text-white px-4 py-2 cursor-pointer hover:opacity-90 flex items-center justify-between whitespace-nowrap text-xl">
                     Awards
                     <IoIosArrowForward />
                   </Link>
