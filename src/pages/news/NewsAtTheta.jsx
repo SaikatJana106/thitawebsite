@@ -44,17 +44,18 @@ const NewsAtTheta = () => {
                         <div className="text-gray-300 text-sm">Featured</div>
 
                         {/* Right - Image Card */}
-                        <div className="relative rounded-xl overflow-hidden w-2/4 h-96 max-md:w-full"> {/* short height */}
+                        <Link to={"/blog/1"} className="relative rounded-xl overflow-hidden w-2/4 h-96 max-md:w-full"> {/* short height */}
                             <img
-                                src="/1 (13).jpg"
+                                // src="/1 (13).jpg"
+                                src='/blog1.png'
                                 alt="AI"
                                 className="w-full h-full object-cover object-center" // fills container
                             />
                             <div className="absolute bottom-4 right-4 text-right text-white">
-                                <p className="text-lg font-semibold">Blog Title</p>
-                                <p className="text-sm text-gray-300">Author</p>
+                                <p className="text-md font-semibold">Advancing AI Excellence at Theta with Strategic Partner AInBox—Our Journey Toward ISO 42001:2023 Compliance .</p>
+                                {/* <p className="text-sm text-gray-300">Author</p> */}
                             </div>
-                        </div>
+                        </Link>
 
                     </div>
                 </div>
@@ -87,7 +88,7 @@ const NewsAtTheta = () => {
                             className="flex overflow-x-auto scrollbar-hide justify-around gap-4 md:gap-8 items-center"
                         >
                             {blogData.popular.slice(0, 2).map((blog, index) => (
-                                <div key={index} className='flex flex-col items-start justify-between w-fit group'>
+                                <Link to={`/blog/${blog.id}`} key={index} className='flex flex-col items-start justify-between w-fit group'>
                                     <div className='h-80 w-80 rounded aspect-square'>
                                         <img
                                             src={blog.image}
@@ -96,7 +97,7 @@ const NewsAtTheta = () => {
                                         />
                                     </div>
                                     <h3
-                                        className={'text-lg font-bold mb-2 text-white group-hover:text-[#6927DA]'}
+                                        className={'text-md font-bold mb-2 text-white group-hover:text-[#6927DA] line-clamp-2 max-w-80'}
                                     >
                                         {blog.title}
                                     </h3>
@@ -104,7 +105,7 @@ const NewsAtTheta = () => {
                                     <div className='flex justify-start w-full'>
                                         <Link to={`/blog/${blog.id}`} className='opacity-0 group-hover:opacity-[100%] text-[#6927DA]'>readmore</Link>
                                     </div>
-                                </div>
+                                </Link>
                             ))}
                         </div>
                         <button
@@ -143,8 +144,8 @@ const NewsAtTheta = () => {
                             className="flex overflow-x-auto gap-10 md:gap-20 pb-4 scrollbar-hide justify-start items-center"
                         >
                             {blogData.popular.map((blog, index) => (
-                                <div key={index} className='flex flex-col items-start justify-between w-fit group'>
-                                    <div className="group h-72 w-64 rounded aspect-square overflow-hidden relative">
+                                <Link to={`/blog/${blog.id}`} key={index} className='flex flex-col items-start justify-between w-fit group'>
+                                    <div className="group h-80 w-80 rounded aspect-square overflow-hidden relative">
                                         <img
                                             src={blog.image}
                                             alt={blog.title}
@@ -153,7 +154,7 @@ const NewsAtTheta = () => {
                                     </div>
 
                                     <h3
-                                        className={'text-lg font-bold mb-2 group-hover:text-[#6927DA]'}
+                                        className={'text-md font-bold mb-2 text-white group-hover:text-[#6927DA] line-clamp-2 max-w-80'}
                                     >
                                         {blog.title}
                                     </h3>
@@ -161,7 +162,7 @@ const NewsAtTheta = () => {
                                     <div className='flex justify-start w-full'>
                                         <Link to={`/blog/${blog.id}`} className='opacity-0 group-hover:opacity-[100%] text-[#6927DA]'>readmore</Link>
                                     </div>
-                                </div>
+                                </Link>
                             ))}
                         </div>
                         <button
@@ -188,11 +189,12 @@ const NewsAtTheta = () => {
 
                     {/* Blog Layout */}
                     {blogData.caseStudies.map((blog, index) => (
-                        <div key={index} className="flex flex-col xl:flex-row justify-between items-center gap-6 group">
+                        <Link to={`/blog/2`} key={index} className="flex flex-col xl:flex-row justify-between items-center gap-6 group">
                             {/* Image */}
                             <div className="group xl:w-1/2 overflow-hidden rounded-md">
                                 <img
-                                    src={blog.image}
+                                    // src={blog.image}
+                                    src='/blog2.png'
                                     alt={blog.title}
                                     className="w-full object-cover rounded-md transform transition-transform duration-500 ease-in-out group-hover:scale-105"
                                 />
@@ -202,17 +204,21 @@ const NewsAtTheta = () => {
                             {/* Content */}
                             <div className="xl:w-1/2 h-[60vh] max-xl:h-fit flex justify-around flex-col max-xl:justify-start ">
                                 <h1 className="text-[clamp(1.3rem,1.3vw,50rem)] font-bold text-[#6927DA] mb-2">
-                                    {blog.title}
+                                    {/* {blog.title} */}
+                                    Theta’s second AI strategy training day with AInBox and Fathi M. AlWosaibi
                                 </h1>
                                 <div className='justify-self-center'>
-                                    <p className="text-gray-300 text-[clamp(0.80rem,0.80vw,50rem)] mb-2">{blog.description}</p>
+                                    <p className="text-gray-300 text-[clamp(0.80rem,0.80vw,50rem)] mb-2">'
+                                        {/* {blog.description} */}
+                                        Theta’s second AI strategy training day with AInBox and Fathi M. AlWosaibi focused on building the technical and organisational foundations for sustainable, compliant AI innovation.
+                                    </p>
 
                                     <span className="text-sm text-[#6927DA] hover:underline cursor-pointer opacity-0 group-hover:opacity-[100%]">
                                         Read More
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </section>
@@ -234,7 +240,7 @@ const NewsAtTheta = () => {
                             className="flex overflow-x-auto gap-4 md:gap-8 justify-around items-center mb-[5%]"
                         >
                             {blogData.articales.slice(0, 2).map((blog, index) => (
-                                <div key={index} className='flex flex-col items-start justify-between w-fit group'>
+                                <Link to={`/blog/${blog.id}`} key={index} className='flex flex-col items-start justify-between w-fit group'>
                                     <div className="group h-80 w-80 rounded aspect-square overflow-hidden">
                                         <img
                                             src={blog.image}
@@ -244,7 +250,7 @@ const NewsAtTheta = () => {
                                     </div>
 
                                     <h3
-                                        className={'text-lg font-bold mb-2 text-white group-hover:text-[#6927DA]'}
+                                        className={'text-md font-bold mb-2 text-white group-hover:text-[#6927DA] line-clamp-2 max-w-80'}
                                     >
                                         {blog.title}
                                     </h3>
@@ -252,7 +258,7 @@ const NewsAtTheta = () => {
                                     <div className='flex justify-start w-full'>
                                         <Link to={`/blog/${blog.id}`} className='opacity-0 group-hover:opacity-[100%] text-[#6927DA]'>readmore</Link>
                                     </div>
-                                </div>
+                                </Link>
                             ))}
                             <button
                                 onClick={() => scrollSlider(allArticlesRef1, 'right')}

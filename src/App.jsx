@@ -16,11 +16,39 @@ import TopGoButton from './pages/topgobutton/TopGoButton';
 import BlogDetails from './pages/BlogDetails';
 function App() {
 
-    useEffect(() => {
+  useEffect(() => {
+    // Load spline viewer script
     const script = document.createElement('script');
     script.type = 'module';
     script.src = 'https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js';
     document.body.appendChild(script);
+
+    // Hide Spline logo after load
+    const hideSplineLogo = () => {
+      const splineViewer = document.querySelector('spline-viewer');
+      if (!splineViewer) return console.log('No spline-viewer found');
+
+      setTimeout(() => {
+        const shadowRoot = splineViewer.shadowRoot;
+        if (shadowRoot) {
+          const logo = shadowRoot.querySelector('#logo');
+          if (logo) {
+            logo.style.display = 'none';
+            console.log("✅ Hidden: <a id='logo'>");
+          } else {
+            console.log('⚠ Logo not found');
+          }
+        }
+      }, 1000);
+    };
+
+    // wait for script to load then run hide function
+    script.onload = hideSplineLogo;
+
+    // also try running again if already loaded
+    const retry = setTimeout(hideSplineLogo, 2000);
+
+    return () => clearTimeout(retry);
   }, []);
 
 
@@ -44,11 +72,11 @@ function App() {
           <Route path='/award' element={<Awards />} />
           <Route path='/whytheta' element={<WhyTheta />} />
           <Route path='/about' element={<About />} />
-          <Route path="/blog/:blogId" element={<BlogDetails/>} />
+          <Route path="/blog/:blogId" element={<BlogDetails />} />
         </Routes>
 
         <Footer />
-        <TopGoButton/>
+        <TopGoButton />
       </Router>
     </div>
   );
