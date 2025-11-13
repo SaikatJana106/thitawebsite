@@ -329,7 +329,7 @@ const Home = () => {
             {/* about start */}
             <section className='max-w-[90%] md:max-w-[80%] mx-auto h-[70dvh] mt-[30px]  relative z-10'>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl  text-[#B555D3] exo"
-                style={{ fontFamily: "Ethnocentric" }}
+                    style={{ fontFamily: "Ethnocentric" }}
                 >
                     About <span className="font-bold">Us</span>
                     {/* <span className="inline-block rounded-full w-4 h-4 bg-[#7D86D7]"></span> */}
@@ -572,49 +572,49 @@ const Home = () => {
                 <div className='max-w-[90%] md:max-w-[85%] mx-auto'>
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#B555D3]" style={{ fontFamily: "Ethnocentric" }} data-aos="zoom-out">
                         How Do We  Define<br />
-                        <span className="font-bold" 
-                        style={{ fontFamily: "Ethnocentric", color:"white" }}>  Our Goals</span>
+                        <span className="font-bold"
+                            style={{ fontFamily: "Ethnocentric", color: "white" }}>  Our Goals</span>
                         <span className='text-white' style={{ fontFamily: "Ethnocentric" }}> ?</span>
                     </h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-8 mt-10 w-fit">
-                        <div className="text-sm md:text-base leading-relaxed">
-                            EXPERT
-                            PROFESSIONALS WITH<br />
-                            DEEP INDUSTRY
-                            EXPERIENCE.
+                        <div className="text-sm md:text-base leading-relaxed bg-[#151533] border border-gray-700 rounded-xl p-5 h-fit w-full max-w-xs mx-auto space-y-4">
+                            Expert professionals with
+                            <br />
+                            deep industry
+                            experience.
                         </div>
-                        <div className="text-sm md:text-base leading-relaxed">
-                            BUILDING LONG TERM,<br />
-                            TRANSPARENT
-                            PARTNERSHIPS.
-                        </div>
-
-                        <div className="text-sm md:text-base leading-relaxed">
-                            COMMITTED TO
-                            EXCEEDING <br /> CLIENT'S
-                            EXPECTATIONS.
+                        <div className="text-sm md:text-base leading-relaxed bg-[#151533] border border-gray-700 rounded-xl p-5 h-fit w-full max-w-xs mx-auto space-y-4 ">
+                            Building long term,<br />
+                            transparent
+                            partnerships.
                         </div>
 
-                        <div className="text-sm md:text-base leading-relaxed">
-                            LEVERAGING
-                            ADVANCED <br />
-                            TECHNOLOGIES  FOR
-                            OPTIMAL RESULTS.
-                        </div>
-                        <div className="text-sm md:text-base leading-relaxed">
-                            DELIVERING TAILORED
-                            IT <br />
-                            SOLUTIONS  TO
-                            MEET CLIENT'S NEEDS.
+                        <div className="text-sm md:text-base leading-relaxed bg-[#151533] border border-gray-700 rounded-xl p-5 h-fit w-full max-w-xs mx-auto space-y-4">
+                            Commited to
+                            exceeing <br /> client's
+                            expectations.
                         </div>
 
+                        <div className="text-sm md:text-base leading-relaxed bg-[#151533] border border-gray-700 rounded-xl p-5 h-fit w-full max-w-xs mx-auto space-y-4">
+                            Leveraging
+                            advanced<br />
+                            technologies for
+                            optimal results.
+                        </div>
+                        <div className="text-sm md:text-base leading-relaxed bg-[#151533] border border-gray-700 rounded-xl p-5 h-fit w-full max-w-xs mx-auto space-y-4">
+                            Delivering tailored
+                            it <br />
+                            solutions to
+                            meet client's needs .
+                        </div>
 
 
-                        <div className="text-sm md:text-base leading-relaxed">
-                            DEDICATED TO
-                            UNDERSTANDING<br />
-                            EACH CLIENT'S
-                            UNIQUE CHALLENGES.
+
+                        <div className="text-sm md:text-base leading-relaxed bg-[#151533] border border-gray-700 rounded-xl p-5 h-fit w-full max-w-xs mx-auto space-y-4">
+                            Dedicated to
+                            understanding<br />
+                            each client's
+                            unique challenges.
                         </div>
                     </div>
 
@@ -635,8 +635,8 @@ const Home = () => {
             >
                 <div className="sticky top-[5%] h-screen flex flex-col justify-end overflow-hidden">
                     <div className="relative h-[629px]">
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#B555D3] text-left max-w-[85%] mx-auto exo" style={{fontFamily: "Ethnocentric"}}>
-                            Our <span className="font-bold exo" style={{fontFamily: "Ethnocentric"}}>Partners</span>
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#B555D3] text-left max-w-[85%] mx-auto exo" style={{ fontFamily: "Ethnocentric" }}>
+                            Our <span className="font-bold exo" style={{ fontFamily: "Ethnocentric" }}>Partners</span>
                         </h1>
                         <div className=" inset-0">
 
@@ -709,14 +709,14 @@ const Home = () => {
 
                         {/* Title at top-left */}
                         <div className="text-[clamp(2.5rem,4vw,50rem)] text-[#B555D3] ml-[5%] exo"
-                        style={{ fontFamily: "Ethnocentric" }}
+                            style={{ fontFamily: "Ethnocentric" }}
                         >
                             <div className=' gap-2'>
                                 <span data-aos="fade-up">What</span> <span data-aos="fade-up">Are</span><span data-aos="fade-up">They</span><br />
                             </div>
                             <div className='flex gap-2 mt-2'>
                                 <h1 className='font-bold text-[#B555D3] text-[clamp(2.5rem,4vw,50rem)] exo' data-aos="fade-up"
-                                style={{ fontFamily: "Ethnocentric" }}
+                                    style={{ fontFamily: "Ethnocentric" }}
                                 >Saying</h1> <span className="inline-block w-2 h-2 rounded-full bg-[#7D86D7] self-end mb-[1%]"></span>
 
                             </div>

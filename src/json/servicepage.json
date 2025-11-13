@@ -2,104 +2,62 @@
   {
     "title": "Artificial Intelligence",
     "details": [
-      "Al Strategy framework development",
-      "Adoption Road-mapping",
-      "Al focused workshops and training planning",
+      "AI Data Discovery Platform",
+      "Al Strategy framework development ",
+      "Adoption Road-mapping ",
+      "Al focused workshops and training planning ",
       "Audit readiness",
-      "Al Infrastructure Planning"
+      "Al Infrastructure Planning "
     ],
     "image": "/ai.png"
   },
   {
-    "title": "Audio Visual",
+    "title": "Audiovisual",
     "details": [
-      "Advanced audio visual and surveillance systems architecture",
-      "Physical Security Enhancements",
+      "Advanced audiovisual and surveillance systems architecture",
+      "Physical Security Enhancements ",
       "Operational efficiency and experience improvement"
     ],
-    "image": "/audio_visual.png"
+    "image": "/audio_visual2.png"
   },
   {
-    "title": "Cybersecurity",
+    "title": "Cybersecurity ",
     "details": [
       "Risk management & threat mitigation strategy creation",
-      "In-depth cybersecurity assessments",
-      "Proactive improvement planning",
-      "Security awareness training"
+      "In-depth cybersecurity assessments ",
+      "Proactive improvement planning ",
+      "Security awareness training "
     ],
     "image": "/cyber_security.png"
   },
   {
     "title": "IT Consulting",
     "details": [
-      "Strategic Planning",
-      "Strategic Planning",
-      "Datacentre Consultation and improvement planning",
-      "IT Service Improvement Planning",
+      "Strategic Planning ",
+      "IT Service Improvement Planning ",
       "IT Service Cost Optimisation",
       "Pre-audit assessments and readiness planning"
     ],
     "image": "/consulting_and_auditing.png"
   },
-  {
-    "title": "ISO Auditing",
-    "details": [
-      "Strategic Planning",
-      "Strategic Planning",
-      "Datacentre Consultation and improvement planning",
-      "IT Service Improvement Planning",
-      "IT Service Cost Optimisation",
-      "Pre-audit assessments and readiness planning"
-    ],
-    "image": "/consulting_and_auditing.png"
-  },
+
   {
     "title": "Project Quality Management",
     "details": [
-      "Strategic Planning",
-      "Strategic Planning",
-      "Datacentre Consultation and improvement planning",
-      "IT Service Improvement Planning",
-      "IT Service Cost Optimisation",
-      "Pre-audit assessments and readiness planning"
+      "Providing consistent Project Management support ",
+      "Quality project reporting ",
+      "Project realignment and success turnaround "
     ],
     "image": "/consulting_and_auditing.png"
   },
   {
-    "title": "Data Centre Consulting",
+    "title": "IT Infrastructure and Cloud ",
     "details": [
-      "Strategic Planning",
-      "Strategic Planning",
-      "Datacentre Consultation and improvement planning",
-      "IT Service Improvement Planning",
-      "IT Service Cost Optimisation",
-      "Pre-audit assessments and readiness planning"
-    ],
-    "image": "/consulting_and_auditing.png"
-  },
-    {
-    "title": "IT Infrastructure",
-    "details": [
-      "Strategic Planning",
-      "Strategic Planning",
-      "Datacentre Consultation and improvement planning",
-      "IT Service Improvement Planning",
-      "IT Service Cost Optimisation",
-      "Pre-audit assessments and readiness planning"
-    ],
-    "image": "/consulting_and_auditing.png"
-  },
-    {
-    "title": "Cloud Services",
-    "details": [
-      "Strategic Planning",
-      "Strategic Planning",
-      "Datacentre Consultation and improvement planning",
-      "IT Service Improvement Planning",
-      "IT Service Cost Optimisation",
-      "Pre-audit assessments and readiness planning"
+      "Solutioning and Architecture ",
+      "Technology Roadmapping ",
+      "Cost and ROI Optimisation",
+      "Availability enhancement / Service improvement "
     ],
     "image": "/consulting_and_auditing.png"
   }
-  
 ]

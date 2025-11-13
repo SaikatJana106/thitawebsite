@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     useEffect(() => {
@@ -187,9 +188,10 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <p className="max-w-xs">Office 305, LLJ Business Centre,
-                            Al Jazira Sports & Cultural Club,
-                            Abu Dhabi, UAE</p>
+                        <p className="max-w-xs">Office 1, Cubes Business Centre, Al Jazira Club, Tower A, Floor 15, Muroor Road - Al Nahyan - Zone 1, Abu Dhabi, UAE</p>
+                        <Link target="_blank" to={"https://www.linkedin.com/company/thetatechae/"}>
+                            <FaLinkedin className="mt-2" size={25} />
+                        </Link>
                     </div>
                 </div>
                 <div className="max-w-[90%] mx-auto pt-6 flex flex-col-reverse md:flex-row justify-between items-center gap-4 text-[clamp(0.7rem,1vw,0.875rem)] text-gray-400">
@@ -202,11 +204,11 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="flex gap-4 flex-wrap justify-center">
+                    {/* <div className="flex gap-4 flex-wrap justify-center">
                         <a href="#" className="hover:text-[#6927DA]">LinkedIn</a>
-                        {/* <a href="#" className="hover:text-[#6927DA]">Facebook</a>
-                        <a href="#" className="hover:text-[#6927DA]">Instagram</a> */}
-                    </div>
+                        <a href="#" className="hover:text-[#6927DA]">Facebook</a>
+                        <a href="#" className="hover:text-[#6927DA]">Instagram</a>
+                    </div> */}
                 </div>
             </footer>
 

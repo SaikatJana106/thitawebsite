@@ -110,12 +110,12 @@ const Navbar = () => {
                 <Link
                   to="/contact" className="side top items-center justify-center gap-2 text-white " style={{ display: "inline-flex" }}>
                   <span>Get A Quote </span>
-                  <ArrowUpRight className='bg-[#6927DA] rounded-full rotate-45' />
+                  <ArrowUpRight className='bg-[#B555D3] rounded-full rotate-45' />
                 </Link>
                 <Link
                   to="/contact" className="side front mt-[8%] items-center justify-center gap-2 text-white" style={{ display: "inline-flex" }}>
                   <span>Get A Quote</span>
-                  <ArrowUpRight className='bg-[#6927DA] rounded-full' />
+                  <ArrowUpRight className='bg-[#B555D3] rounded-full' />
                 </Link>
               </div>
             </div>
