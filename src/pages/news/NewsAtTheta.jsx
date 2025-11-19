@@ -10,28 +10,28 @@ const NewsAtTheta = () => {
     const allArticlesRef2 = useRef(null);
 
     // Function to scroll slider
-   const scrollSlider = (ref, direction) => {
-  if (!ref.current) return;
+    const scrollSlider = (ref, direction) => {
+        if (!ref.current) return;
 
-  // Find one of the child elements to get its width
-  const item = ref.current.querySelector('div'); // Adjust selector if needed
-  if (!item) return;
+        // Find one of the child elements to get its width
+        const item = ref.current.querySelector('div'); // Adjust selector if needed
+        if (!item) return;
 
-  const itemWidth = item.offsetWidth + parseInt(getComputedStyle(item).marginRight); // Include margin if any
-  const scrollAmount = direction === 'left' ? -itemWidth : itemWidth;
+        const itemWidth = item.offsetWidth + parseInt(getComputedStyle(item).marginRight); // Include margin if any
+        const scrollAmount = direction === 'left' ? -itemWidth : itemWidth;
 
-  ref.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-};
+        ref.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    };
 
 
 
     return (
         <div className='relative z-10'>
-            <section className=" text-white flex justify-between items-center min-h-screen px-8 py-12 font-sans">
-                <div className='w-[85%] mx-auto h-fit'>
+            <section className=" text-white flex justify-between items-center min-h-screen font-sans">
+                <div className='w-[85%] max-md:w-[90%] mx-auto h-fit'>
                     {/* Header */}
-                    <h1 className="text-5xl md:text-6xl font-bold text-[#B555D3] mb-10 tracking-wide text-center exo"
-                    style={{ fontFamily: "Ethnocentric" }}
+                    <h1 className="text-5xl md:text-6xl font-bold text-[#B555D3] mb-5 tracking-wide text-center exo"
+                        style={{ fontFamily: "Ethnocentric" }}
                     >
 
                         NEWS AT THETA
@@ -39,33 +39,43 @@ const NewsAtTheta = () => {
                     </h1>
 
                     {/* Content */}
-                    <div className="flex flex-col md:flex-row items-start justify-around gap-10">
-                        {/* Left - Label */}
+                    {/* <div className="flex flex-col md:flex-row items-start justify-around gap-10">
                         <div className="text-gray-300 text-sm">Featured</div>
 
-                        {/* Right - Image Card */}
-                        <Link to={"/blog/1"} className="relative rounded-xl overflow-hidden w-2/4 h-96 max-md:w-full"> {/* short height */}
+                        <Link to={"/blog/1"} className="relative rounded-xl overflow-hidden w-2/4 h-96 max-md:w-full"> 
                             <img
-                                // src="/1 (13).jpg"
                                 src='/blog1.png'
                                 alt="AI"
-                                className="w-full h-full object-cover object-center" // fills container
+                                className="w-full h-full object-cover object-center" 
                             />
                             <div className="absolute bottom-4 right-4 text-right text-white">
                                 <p className="text-md font-semibold">Advancing AI Excellence at Theta with Strategic Partner AInBox—Our Journey Toward ISO 42001:2023 Compliance .</p>
-                                {/* <p className="text-sm text-gray-300">Author</p> */}
                             </div>
                         </Link>
+
+                    </div> */}
+                    <div className='flex flex-col justify-center items-center'>
+                        <Link to={"/blog/1"} className="relative rounded-xl overflow-hidden w-2/4 h-96 max-md:w-full">
+                            <img
+                                src='/blog1.png'
+                                alt="AI"
+                                className="w-full h-full object-cover object-center"
+                            />
+                            <div className="absolute bottom-4 right-4 text-right text-white">
+                                <p className="text-md font-semibold">Advancing AI Excellence at Theta with Strategic Partner AInBox—Our Journey Toward ISO 42001:2023 Compliance .</p>
+                            </div>
+                        </Link>
+                        <div className="text-gray-300 text-2xl">Featured</div>
 
                     </div>
                 </div>
             </section>
 
-            <section className=" text-white px-6 md:px-16 py-16 font-sans relative overflow-hidden">
-                <div className="w-[85%] mx-auto h-fit">
+            <section className=" text-white  font-sans relative overflow-hidden">
+                <div className="w-[85%] max-md:w-[90%] mx-auto h-fit">
                     {/* Header */}
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#B555D3] mb-4 exo"
-                    style={{ fontFamily: "Ethnocentric" }}
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#B555D3] mb-4 exo"
+                        style={{ fontFamily: "Ethnocentric" }}
                     >
                         Popular Now
                     </h2>
@@ -75,17 +85,17 @@ const NewsAtTheta = () => {
                     </p>
 
                     {/* Blog Cards */}
-                    <div className="relative">
+                    <div className="flex justify-center items-center gap-2">
                         <button
                             onClick={() => scrollSlider(popularRef, 'left')}
-                            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-[#6927DA] bg-opacity-50 rounded-full p-1 max-md:block hidden text-white  transition-colors "
+                            className="h-fit w-fit transform -translate-y-1/2 z-10 bg-[#6927DA] bg-opacity-50 rounded-full p-1 max-md:block hidden text-white  transition-colors "
                         >
                             <FaChevronLeft size={24} />
                         </button>
 
                         <div
                             ref={popularRef}
-                            className="flex overflow-x-auto scrollbar-hide justify-around gap-4 md:gap-8 items-center"
+                            className="flex overflow-x-auto scrollbar-hide justify-around gap-4 md:gap-8 items-center w-full"
                         >
                             {blogData.popular.slice(0, 2).map((blog, index) => (
                                 <Link to={`/blog/${blog.id}`} key={index} className='flex flex-col items-start justify-between w-fit group'>
@@ -110,7 +120,7 @@ const NewsAtTheta = () => {
                         </div>
                         <button
                             onClick={() => scrollSlider(popularRef, 'right')}
-                            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-[#6927DA] bg-opacity-50 rounded-full p-1 max-md:block hidden text-white  transition-colors "
+                            className=" h-fit w-fit transform -translate-y-1/2 z-10 bg-[#6927DA] bg-opacity-50 rounded-full p-1 max-md:block hidden text-white  transition-colors "
                         >
                             <FaChevronRight size={24} />
                         </button>
@@ -118,11 +128,11 @@ const NewsAtTheta = () => {
                 </div>
             </section>
 
-            <section className=" text-white px-6 md:px-16 py-16 font-sans relative overflow-hidden">
-                <div className="w-[85%] mx-auto h-fit">
+            <section className=" text-white font-sans py-5 relative overflow-hidden">
+                <div className="w-[85%] max-md:w-[90%] mx-auto h-fit">
                     {/* Header */}
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#B555D3] mb-4 exo"
-                    style={{ fontFamily: "Ethnocentric" }}
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#B555D3] mb-4 exo"
+                        style={{ fontFamily: "Ethnocentric" }}
                     >
                         Recent Articles
                     </h2>
@@ -131,17 +141,17 @@ const NewsAtTheta = () => {
                     </p>
 
                     {/* Blog Cards */}
-                    <div className="relative">
+                    <div className="flex justify-center items-center gap-2">
                         <button
                             onClick={() => scrollSlider(recentRef, 'left')}
-                            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-[#6927DA] bg-opacity-50 rounded-full p-1 max-md:block hidden text-white  transition-colors "
+                            className="h-fit w-fit z-10 bg-[#6927DA] bg-opacity-50 rounded-full p-1 max-md:block hidden text-white  transition-colors "
                         >
                             <FaChevronLeft size={24} />
                         </button>
 
                         <div
                             ref={recentRef}
-                            className="flex overflow-x-auto gap-10 md:gap-20 pb-4 scrollbar-hide justify-start items-center"
+                            className="flex overflow-x-auto gap-10 md:gap-20 pb-4 scrollbar-hide justify-start items-center w-full"
                         >
                             {blogData.popular.map((blog, index) => (
                                 <Link to={`/blog/${blog.id}`} key={index} className='flex flex-col items-start justify-between w-fit group'>
@@ -167,7 +177,7 @@ const NewsAtTheta = () => {
                         </div>
                         <button
                             onClick={() => scrollSlider(recentRef, 'right')}
-                            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-[#6927DA] bg-opacity-50 rounded-full p-1 max-md:block hidden text-white  transition-colors "
+                            className="h-fit w-fit z-10 bg-[#6927DA] bg-opacity-50 rounded-full p-1 max-md:block hidden text-white  transition-colors "
                         >
                             <FaChevronRight size={24} />
                         </button>
@@ -175,11 +185,11 @@ const NewsAtTheta = () => {
                 </div>
             </section>
 
-            <section className=" text-white px-6 md:px-16 py-16 font-sans relative overflow-hidden">
-                <div className="w-[85%] mx-auto h-fit">
+            <section className=" text-white py-5 font-sans relative overflow-hidden">
+                <div className="w-[85%] max-md:w-[90%] mx-auto h-fit">
                     {/* Header */}
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#B555D3] mb-4 exo"
-                    style={{ fontFamily: "Ethnocentric" }}
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#B555D3] mb-4 exo"
+                        style={{ fontFamily: "Ethnocentric" }}
                     >
                         Case Studies
                     </h2>
@@ -222,22 +232,22 @@ const NewsAtTheta = () => {
                     ))}
                 </div>
             </section>
-            <section className='min-h-screen w-[85%] mx-auto'>
-                <h1 className='text-[#B555D3] text-2xl sm:text-3xl md:text-4xl exo'
-                style={{ fontFamily: "Ethnocentric" }}
+            <section className='h-screen min-h-fit w-[85%] max-md:w-[90%] mx-auto max-md:h-fit'>
+                <h1 className='text-[#B555D3] text-3xl md:text-4xl exo'
+                    style={{ fontFamily: "Ethnocentric" }}
                 >All Articals</h1>
                 <p className='text-white roboto-semi'>We share common trands, opinions, short and long story from the team behimd company</p>
                 <div className='my-[5%]'>
-                    <div className="relative mb-8 md:mb-12">
+                    <div className="flex justify-center items-center gap-2">
                         <button
                             onClick={() => scrollSlider(allArticlesRef1, 'left')}
-                            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-[#6927DA] bg-opacity-50 rounded-full p-1 max-md:block hidden text-white  transition-colors "
+                            className="h-fit w-fit z-10 bg-[#6927DA] bg-opacity-50 rounded-full p-1 max-md:block hidden text-white  transition-colors "
                         >
                             <FaChevronLeft size={24} />
                         </button>
                         <div
                             ref={allArticlesRef1}
-                            className="flex overflow-x-auto gap-4 md:gap-8 justify-around items-center mb-[5%]"
+                            className="flex overflow-x-auto gap-4 md:gap-8 justify-around items-center mb-[5%] w-full"
                         >
                             {blogData.articales.slice(0, 2).map((blog, index) => (
                                 <Link to={`/blog/${blog.id}`} key={index} className='flex flex-col items-start justify-between w-fit group'>
@@ -260,23 +270,24 @@ const NewsAtTheta = () => {
                                     </div>
                                 </Link>
                             ))}
-                            <button
-                                onClick={() => scrollSlider(allArticlesRef1, 'right')}
-                                className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-[#6927DA] bg-opacity-50 rounded-full p-1 max-md:block hidden text-white  transition-colors "
-                            >
-                                <FaChevronRight size={24} />
-                            </button>
+
                         </div>
+                        <button
+                            onClick={() => scrollSlider(allArticlesRef1, 'right')}
+                            className="h-fit w-fit z-10 bg-[#6927DA] bg-opacity-50 rounded-full p-1 max-md:block hidden text-white  transition-colors "
+                        >
+                            <FaChevronRight size={24} />
+                        </button>
                     </div>
 
-                    <div className="relative">
+                    {/* <div className="relative">
                         <button
                             onClick={() => scrollSlider(allArticlesRef2, 'left')}
                             className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-[#6927DA] bg-opacity-50 rounded-full p-1 max-md:block hidden text-white  transition-colors "
                         >
                             <FaChevronLeft size={24} />
-                        </button>
-{/* 
+                        </button> */}
+                    {/* 
                         <div
                             ref={allArticlesRef2}
                             className='flex overflow-x-auto  justify-around gap-4 md:gap-8 items-center'
@@ -309,7 +320,7 @@ const NewsAtTheta = () => {
                                 <FaChevronRight size={24} />
                             </button>
                         </div> */}
-                    </div>
+                    {/* </div> */}
                 </div>
             </section>
         </div>

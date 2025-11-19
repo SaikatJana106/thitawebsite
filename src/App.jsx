@@ -55,11 +55,11 @@ function App() {
   return (
 
     <div className='bg-black'>
-      {/* {<spline-viewer
+      {<spline-viewer
         url="https://prod.spline.design/gH5W0xTo9YFfiN1x/scene.splinecode"
         className="fixed top-0 left-0 w-full h-full"
       />
-      } */}
+      }
       <Router>
         <Navbar />
 

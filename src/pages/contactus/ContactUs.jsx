@@ -10,7 +10,7 @@ const ContactUs = () => {
     return (
         <div className='relative z-10'>
             <section className=" text-white  font-sans min-h-screen flex flex-col justify-center z-10">
-                <div className='max-w-[85%] mx-auto'>
+                <div className='w-[85%] max-md:w-[90%] mx-auto'>
 
 
                     <h2 className="text-[#B555D3] text-2xl sm:text-3xl md:text-4xl font-bold mb-10 tracking-widest exo" 
@@ -21,7 +21,7 @@ const ContactUs = () => {
 
                     <div className="flex max-xl:flex-col flex-row justify-between gap-12">
                         {/* Left Content */}
-                        <div className="xl:w-1/2 space-y-[20%] flex flex-col justify-between">
+                        <div className="xl:w-1/2 space-y-[20%] max-md:space-y-[5%] flex flex-col justify-between">
                             <p className="text-gray-300 leading-relaxed roboto-semi text-[clamp(1rem,1.2vw,50rem)] text-justify">
                                 Have a question, project idea, or just want to chat? We'd  love to hear from you.
                                 Fill out the form or reach out directly  and our team will get back to you shortly.
@@ -42,7 +42,7 @@ const ContactUs = () => {
                         </div>
                         <div className='xl:border-l border-b border-gray-600' data-aos="fade-down"></div>
                         {/* Right Content */}
-                        <div className="md:w-1/2 space-y-6  pl-6">
+                        <div className="md:w-1/2 space-y-6 ">
                             <div className="flex items-start gap-4">
                                 <FaBuilding className="text-white bg-gray-700 p-2 rounded-full w-10 h-10" />
                                 <p className="text-gray-200 text-sm">
@@ -66,7 +66,7 @@ const ContactUs = () => {
                     </div>
                 </div>
             </section>
-            <section className=" text-white py-16 px-6 md:px-24 min-h-screen z-10">
+            <section className=" text-white w-[85%] max-md:w-[90%] mx-auto min-h-screen z-10">
                 <div className='w-[85%] max-lg:w-[98%] '>
                     <h2 className="text-[#B555D3]  font-bold mb-12 tracking-widest leading-snug uppercase exo text-2xl sm:text-3xl md:text-4xl" 
                     style={{ fontFamily: "Ethnocentric" }}
@@ -75,7 +75,7 @@ const ContactUs = () => {
                         <span className='text-white'>With Our Team</span>
                     </h2>
 
-                    <form className="bg-[#14121c] p-8 rounded-md shadow-md border border-gray-700 space-y-6 w-1/2 max-xl:w-3/4 max-lg:w-5/6 max-md:w-full ">
+                    <form className="bg-[#14121c] p-8 max-xl:p-2 rounded-md shadow-md border border-gray-700 space-y-6 w-1/2 max-xl:w-3/4 max-lg:w-5/6 max-md:w-full ">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {/* Full Name */}
                             <div>

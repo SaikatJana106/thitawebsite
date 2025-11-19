@@ -3,12 +3,12 @@ import jobs from '../../json/career.json'
 const Career = () => {
     return (
         <div className='relative z-10'>
-            <section className="h-[90vh] flex justify-between items-center  text-white">
-                <div className="w-[85%] mx-auto">
+            <section className="h-[90vh] min-h-fit max-md:h-fit flex justify-center items-center  text-white w-[85%] max-md:w-[90%] mx-auto">
+                <div>
                     <h1 className="text-[clamp(3rem,5vw,50rem)] font-bold text-[#B555D3] mb-6 exo max-md:text-center"
                     style={{ fontFamily: "Ethnocentric" }}
                     >CAREERS</h1>
-                    <div className="flex justify-between h-[30dvh] max-md:flex-col">
+                    <div className="flex justify-around h-[30dvh] max-md:flex-col">
                         <p className="w-1/2 text-[clamp(1.25rem,1vw,50rem)] max-md:w-full max-md:text-center">
                             Careers At Theta. Discover Open Positions  Careers At Theta.
                         </p>
@@ -25,15 +25,15 @@ const Career = () => {
                 </div>
             </section>
 
-            <section className="min-h-screen flex items-center  text-white ">
-                <div className='max-w-[85%] mx-auto '>
+            <section className="h-screen min-h-fit max-md:h-fit flex items-center  text-white w-[85%] max-md:w-[90%] mx-auto">
+                <div>
                     <h2 className="text-[clamp(2rem,3vw+1rem,50rem)] font-bold text-white my-[5%] exo"
                     style={{ fontFamily: "Ethnocentric" }}
                     >
                         WHY WORK<br />
                         AT THETA?
                     </h2>
-                    <div className=" flex justify-between w-full min-h-[30dvh] max-xl:flex-col">
+                    <div className=" flex justify-around w-full min-h-[30dvh] max-xl:flex-col">
 
                         {/* Left Column */}
                         <div className="w-1/2 max-xl:w-full">
@@ -69,11 +69,11 @@ const Career = () => {
             </div>
 
 
-            <div className=" min-h-screen text-white p-10 w-[85%] mx-auto max-lg:w-[95%]">
+            <div className=" min-h-screen text-white  w-[85%] mx-auto max-md:w-[90%] py-10">
                 <h1 className="text-[clamp(1.75rem,3vw+0.40rem,50rem)]  font-bold mb-10 exo max-lg:mb-0"
                 style={{ fontFamily: "Ethnocentric" }}
                 >Open Positions (0{jobs.length})</h1>
-                <div className='flex justify-end max-w-[85%]  mx-auto max-lg:w-[95%]'>
+                <div className='flex justify-end'>
                     <div className="space-y-10">
                         {jobs.map((job, index) => (
                             <div key={index} className="border-b border-[#333] pt-10">

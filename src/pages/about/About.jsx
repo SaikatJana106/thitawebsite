@@ -11,6 +11,11 @@ const About = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+  useEffect(() => {
+    if (window.scrollY > 0) {
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
+  }, []);
 
   // Bottom scroll progress animation
   const containerRef = useRef(null);
@@ -301,7 +306,7 @@ const About = () => {
       </svg>
 
       {/* Hero Section */}
-      <div className="min-h-screen flex items-center justify-center px-4">
+      <div className="h-screen min-h-fit w-[85%] max-md:w-[90%] mx-auto py-5 max-xl:h-fit flex items-center justify-center px-4">
         <div className="text-center max-w-3xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl leading-tight font-bold text-[#B555D3] tracking-wide uppercase mb-6 exo"
             style={{ fontFamily: "Ethnocentric" }}
@@ -334,7 +339,7 @@ const About = () => {
 
       {/* Founders Section */}
       <div className="min-h-screen max-w-[90%] md:max-w-[85%] mx-auto">
-        <section className="py-12 md:py-20 relative z-10">
+        <section className=" md:py-20 relative z-10">
           <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#B555D3] uppercase tracking-wide mb-6 exo max-md:text-center"
@@ -372,7 +377,7 @@ const About = () => {
         </section>
 
         {/* Vision & Mission Section */}
-        <section className="py-20 relative z-10">
+        <section className=" relative z-10">
           <div ref={descRef}>
             <div className="px-6 py-16 text-center">
               <div className="max-w-4xl mx-auto space-y-12">
@@ -486,7 +491,7 @@ const About = () => {
 
         <div
           ref={containerRef}
-          className="sticky top-0 h-screen flex items-center flex-col justify-center overflow-x-auto"
+          className="sticky top-0 h-screen flex items-center flex-col justify-evenly overflow-x-auto"
         >
           <h1 className="text-center font-bold text-[#B555D3] text-3xl sm:text-4xl md:text-5xl "
             style={{ fontFamily: "Ethnocentric" }}
@@ -536,7 +541,7 @@ const About = () => {
       </div>
 
       {/* Certifications Section */}
-      <section className=" py-12">
+      <section className=" mb-12">
         <div className="container mx-auto px-4">
           <h2 className="font-bold text-[#B555D3] text-center mb-8 exo text-3xl sm:text-4xl md:text-5xl" style={{ fontFamily: "Ethnocentric" }}>Theta Certifications</h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

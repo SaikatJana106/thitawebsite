@@ -38,7 +38,7 @@
       "IT Service Cost Optimisation",
       "Pre-audit assessments and readiness planning"
     ],
-    "image": "/consulting_and_auditing.png"
+    "image": "/it_consalt.png"
   },
 
   {
@@ -48,7 +48,7 @@
       "Quality project reporting ",
       "Project realignment and success turnaround "
     ],
-    "image": "/consulting_and_auditing.png"
+    "image": "/project_quality.png"
   },
   {
     "title": "IT Infrastructure and Cloud ",
@@ -58,6 +58,6 @@
       "Cost and ROI Optimisation",
       "Availability enhancement / Service improvement "
     ],
-    "image": "/consulting_and_auditing.png"
+    "image": "/it_infa.png"
   }
 ]

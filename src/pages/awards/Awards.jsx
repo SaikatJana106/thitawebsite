@@ -15,8 +15,8 @@ const Awards = () => {
 
     return (
         <div className='relative z-10'>
-            <div className="h-[90vh] text-white flex items-center justify-center px-4">
-                <section className="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-7xl mx-auto">
+            <div className="h-[90vh] max-xl:h-fit min-h-fit text-white flex items-center justify-center">
+                <section className="flex flex-col-reverse md:flex-row items-center justify-between w-[85%] max-md:w-[90%] mx-auto">
                     {/* Left - Image */}
                     <div className="w-full md:w-1/2 p-4 aspect-video">
                         <img
@@ -39,7 +39,7 @@ const Awards = () => {
                 </section>
             </div>
 
-            <div className="text-white px-6 md:px-20 py-12 w-[85%] mx-auto">
+            <div className="text-white py-12 w-[85%] max-md:w-[90%] mx-auto">
                 {awardsData.map((award, index) => (
                     <div
                         key={index}
@@ -67,14 +67,14 @@ const Awards = () => {
                         >
                             {/* <p className="text-gray-300 text-start text-xs">{award.subDescription}</p> */}
                             <div className="flex gap-4 justify-center items-center">
-                                <div className="w-1/2 h-72 flex justify-center items-center">
+                                <div className="w-1/2 h-72 flex justify-start items-start">
                                     <img
                                         className="max-h-full max-w-full object-contain"
                                         src={award.image}
                                         alt=""
                                     />
                                 </div>
-                                <div className="w-1/2 h-72 flex justify-center items-center">
+                                <div className="w-1/2 h-72 flex justify-start items-start">
                                     <img
                                         className="max-h-full max-w-full object-contain"
                                         src={award.imagesec}

@@ -58,7 +58,7 @@ const Services = () => {
     return (
         <div className='relative  z-10'>
             {/* <section className="text-white min-h-screen flex flex-col items-center justify-center px-4 text-center space-y-6">
-                <div className='w-[85%]'>
+                <div className='w-[85%] max-md:w-[90%]'>
                     <div className='flex justify-start flex-col items-start'>
                         <h1
                             className={`exo text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-widest text-[#B555D3]  transition-all duration-500 ease-in-out
@@ -115,8 +115,8 @@ const Services = () => {
                     </div>
                 </div>
             </section> */}
-            <section className="text-white min-h-screen flex flex-col items-center justify-center px-4 text-center space-y-6">
-                <div className='w-[85%]'>
+            <section className="text-white h-screen min-h-fit max-md:h-fit flex flex-col items-center justify-center px-4 text-center space-y-6">
+                <div className='w-[85%] max-md:w-[90%]'>
                     <div className='flex justify-start flex-col items-start'>
                         <h1
                             className={`exo text-[clamp(1.5rem,2.2vw,4rem)] font-bold uppercase tracking-widest text-[#B555D3]  transition-all duration-500 ease-in-out
@@ -174,10 +174,10 @@ const Services = () => {
                     </div>
                 </div>
             </section>
-            <section className=" text-white min-h-screen py-10">
-                <div className="w-[85%] mx-auto">
+            <section className=" text-white min-h-screen pt-10">
+                <div className="w-[85%] max-md:w-[90%] mx-auto">
                     {/* Heading */}
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-wide text-white mb-12 leading-tight exo"
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-wide text-white  leading-tight exo"
                         style={{ fontFamily: "Ethnocentric" }}
                     >
                         ALL YOUR <br />
@@ -187,7 +187,7 @@ const Services = () => {
 
                     {/* Service Items - stacked vertically below the heading */}
                     <div className='flex justify-center items-center'>
-                        <div className="space-y-10">
+                        <div className="">
                             {service.map((item, index) => (
                                 <div key={index} className="flex flex-col md:flex-row gap-6 items-center  p-6 rounded-lg">
                                     {/* Left side image */}
@@ -225,7 +225,7 @@ const Services = () => {
                     </div>
                 </div>
             </section>
-            <section className=" text-white py-12 px-4">
+            <section className=" text-white py-12 max-md:py-0 px-4">
                 <div className="w-[70%] min-w-fit m-auto">
                     <div className="bg-[#111124]/70 rounded-3xl border border-[#9747FF] min-h-fit min-w-fit  p-8 md:px-12 h-80 flex flex-col md:flex-row justify-between items-center gap-8">
 
